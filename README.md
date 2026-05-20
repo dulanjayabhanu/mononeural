@@ -1,24 +1,20 @@
-# MonoNeural
-
-<p align="center">
-  <img src="./public/og-image.png" alt="MonoNeural OG Banner" />
-</p>
-
-<p align="center">
-  Learn artificial intelligence from the ground up through interactive experimentation, real-time visualization, and structured learning examples.
-</p>
-
-<br>
+<div align="center">
+  <img src="/docs/assets/images/mononeural-main-poster.webp" alt="MonoNeural Main Poster" />
+</div>
 
 <div align="center">
     <a href="https://mononeural.vercel.app" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Live_Demo-Open_App-0a0a0a?style=for-the-badge&logo=vercel&logoColor=fafafa&labelColor=155dfc&color=0a0a0a" alt="ScreenPath live demo button" />
+        <img src="https://img.shields.io/badge/Live_Demo-Open_App-0a0a0a?style=for-the-badge&logo=vercel&logoColor=fafafa&labelColor=155dfc&color=0a0a0a" alt="MonoNeural App Launch Button" />
     </a>
 </div>
 
+# MonoNeural
+
+### Learn artificial intelligence from the ground up through interactive experimentation, real-time visualization, and structured learning examples.
+
 <br>
 
-## Project Introduction
+## Introduction
 
 MonoNeural is an interactive learning platform designed to simplify the core concepts of artificial neural networks by transforming abstract mathematical ideas into a fully visual and hands-on experience.
 
@@ -92,7 +88,7 @@ Users can define custom datasets that represent real-world scenarios, such as ac
 
 The trainer also provides real-time visualization of neuron behavior, allowing users to observe how input contributions are weighted and how the final activation output evolves during training. This makes abstract learning processes visible and understandable.
 
-Explore: [Full Artificial Neuron Trainer Document](docs/trainer.md)
+**Explore:** [Artificial Neuron Trainer Document](docs/trainer.md)
 
 <br>
 
@@ -104,7 +100,7 @@ This tool also includes configurable prediction thresholds, enabling users to de
 
 The tester helps users understand how trained models behave when exposed to unseen data, reinforcing the concept of generalization in machine learning.
 
-Explore: [Full Artificial Neuron Tester Document](docs/tester.md)
+**Explore:** [Artificial Neuron Tester Document](docs/tester.md)
 
 <br>
 
@@ -116,7 +112,7 @@ Each example is fully configured with predefined weights, bias values, and test 
 
 These examples cover scenarios such as academic performance prediction, financial decision modeling, behavioral analysis, and personal goal evaluation. They serve as practical demonstrations of how neural computation can be applied to structured decision systems.
 
-Explore: [Full Pre-Trained Examples Document](docs/examples.md)
+**Explore:** [Pre-Trained Neuron Examples Document](docs/examples.md)
 
 <br>
 
@@ -126,7 +122,7 @@ The documentation system provides a structured learning path that explains both 
 
 This system ensures that users can learn at their own pace while maintaining a clear understanding of how each component of MonoNeural contributes to the overall learning experience.
 
-Explore: [Full Docs-System Document](docs/documentation.md)
+**Explore:** [Docs-System Document](docs/documentation.md)
 
 <br>
 
@@ -320,6 +316,6 @@ See the [LICENSE](LICENSE) file for complete license information.
 ---
 
 <div align="center">
-    <img src="/public/favicon.svg" alt="ScreenPath logo" width=150px />
-    <h3>MonoNeural</h3>
+    <img src="/docs/assets/images/mononeural-main-logo.svg" alt="MonoNeural Logo" width=150px />
+    <h2>MonoNeural</h2>
 </div>

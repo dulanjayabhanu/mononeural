@@ -1,9 +1,9 @@
-[Main Document](../README.md) / Pre Trained Neuron Examples
+[MonoNeural Document](https://github.com/dulanjayabhanu/mononeural#3-pre-trained-examples) / Pre Trained Neuron Examples
 
 <br>
 
 <div align="center">
-    <img src="/public/docs/pre-trained-neuron-examples.webp" alt="ScreenPath main poster" />
+    <img src="/docs/assets/images/mononeural-pre-trained-neuron-examples.webp" alt="MonoNeural Pre-trained Neuron Examples UI" />
 </div>
 
 <br>
@@ -44,4 +44,4 @@ The examples serve as both learning tools and experimentation environments, enab
 
 <br>
 
-[Go Back](../README.md)
+[Back To Main Document](https://github.com/dulanjayabhanu/mononeural#3-pre-trained-examples)

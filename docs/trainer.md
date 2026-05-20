@@ -1,9 +1,9 @@
-[Main Document](../README.md) / Artificial Neuron Trainer
+[MonoNeural Document](https://github.com/dulanjayabhanu/mononeural#1-artificial-neuron-trainer) / Artificial Neuron Trainer
 
 <br>
 
 <div align="center">
-    <img src="/public/docs/artificial-neuron-trainer.webp" alt="ScreenPath main poster" />
+    <img src="./assets/images/mononeural-artificial-neuron-trainer.webp" alt="MonoNeural Artificial Neuron Trainer UI" />
 </div>
 
 <br>
@@ -88,4 +88,4 @@ This section reinforces the concept that machine learning models are defined by 
 
 <br>
 
-[Go Back](../README.md)
+[Back To Main Document](https://github.com/dulanjayabhanu/mononeural#1-artificial-neuron-trainer)

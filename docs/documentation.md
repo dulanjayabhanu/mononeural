@@ -1,9 +1,9 @@
-[Main Document](../README.md) / Documentation System
+[MonoNeural Document](https://github.com/dulanjayabhanu/mononeural#4-documentation-system) / Documentation System
 
 <br>
 
 <div align="center">
-    <img src="/public/docs/pre-trained-neuron-examples.webp" alt="ScreenPath main poster" />
+    <img src="/docs/assets/images/mononeural-documentation.webp" alt="MonoNeural Documentation UI" />
 </div>
 
 <br>
@@ -34,4 +34,4 @@ Overall, the Documentation System serves as a complete educational companion to 
 
 <br>
 
-[Go Back](../README.md)
+[Back To Main Document](https://github.com/dulanjayabhanu/mononeural#4-documentation-system)

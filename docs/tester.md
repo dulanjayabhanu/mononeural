@@ -1,9 +1,9 @@
-[Main Document](../README.md) / Artificial Neuron Tester
+[MonoNeural Document](https://github.com/dulanjayabhanu/mononeural#2-artificial-neuron-tester) / Artificial Neuron Tester
 
 <br>
 
 <div align="center">
-    <img src="/public/docs/artificial-neuron-tester.webp" alt="ScreenPath main poster" />
+    <img src="./assets/images/mononeural-artificial-neuron-tester.webp" alt="MonoNeural Artificial Neuron Tester UI" />
 </div>
 
 <br>
@@ -58,4 +58,4 @@ By reviewing results in tabular form, users can identify patterns and evaluate t
 
 <br>
 
-[Go Back](../README.md)
+[Back To Main Document](https://github.com/dulanjayabhanu/mononeural#2-artificial-neuron-tester)
