@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" shape-rendering="crispEdges">
+    <defs>
+        <style>
+            text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+            .title { font-weight: 800; letter-spacing: 1.5px; }
+            .label { font-weight: 600; letter-spacing: 0.5px; }
+            .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+        </style>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-width="0.6" opacity="0.03"/>
+            <circle cx="40" cy="40" r="1.5" fill="#155DFC" opacity="0.12"/>
+        </pattern>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+
+    <!-- Neural network nodes - distributed throughout -->
+    <g stroke="#155DFC" stroke-width="1.5" fill="none" opacity="0.18" stroke-linecap="square" stroke-linejoin="miter">
+        <!-- Top left cluster -->
+        <line x1="85" y1="105" x2="165" y2="70"/>
+        <line x1="165" y1="70" x2="240" y2="130"/>
+        <line x1="85" y1="105" x2="150" y2="185"/>
+        <line x1="150" y1="185" x2="240" y2="130"/>
+        <line x1="240" y1="130" x2="315" y2="100"/>
+        <line x1="165" y1="70" x2="315" y2="100"/>
+        <!-- Nodes -->
+        <rect x="81" y="101" width="8" height="8" fill="#155DFC" transform="rotate(45 85 105)"/>
+        <rect x="161" y="66" width="8" height="8" fill="#155DFC" transform="rotate(45 165 70)"/>
+        <rect x="236" y="126" width="8" height="8" fill="#155DFC" transform="rotate(45 240 130)"/>
+        <rect x="146" y="181" width="8" height="8" fill="#155DFC" transform="rotate(45 150 185)"/>
+        <rect x="311" y="96" width="8" height="8" fill="#155DFC" transform="rotate(45 315 100)"/>
+
+        <!-- Bottom right cluster -->
+        <line x1="950" y1="560" x2="1020" y2="525"/>
+        <line x1="1020" y1="525" x2="1100" y2="580"/>
+        <line x1="1020" y1="525" x2="1075" y2="465"/>
+        <line x1="1075" y1="465" x2="1100" y2="580"/>
+        <rect x="946" y="556" width="8" height="8" fill="#155DFC" transform="rotate(45 950 560)"/>
+        <rect x="1016" y="521" width="8" height="8" fill="#155DFC" transform="rotate(45 1020 525)"/>
+        <rect x="1096" y="576" width="8" height="8" fill="#155DFC" transform="rotate(45 1100 580)"/>
+        <rect x="1071" y="461" width="8" height="8" fill="#155DFC" transform="rotate(45 1075 465)"/>
+    </g>
+
+    <!-- Large subtle checkmark (background accent) -->
+    <g opacity="0.08" stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+        <path d="M65 380 L85 410 L135 335"/>
+    </g>
+
+    <!-- Upward graph accent (top right) -->
+    <g transform="translate(880 85) scale(1.1)" opacity="0.20">
+        <rect x="10" y="45" width="9" height="28" fill="#155DFC"/>
+        <rect x="24" y="32" width="9" height="41" fill="#155DFC"/>
+        <rect x="38" y="20" width="9" height="53" fill="#155DFC"/>
+        <rect x="52" y="8" width="9" height="65" fill="#155DFC"/>
+        <path d="M6 70 L64 12" stroke="#155DFC" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <!-- Desk -->
+    <polygon points="60,510 640,510 680,540 20,540" fill="#252A32"/>
+    <rect x="20" y="540" width="660" height="12" fill="#1A1E24"/>
+    <rect x="100" y="552" width="16" height="123" fill="#15181C"/>
+    <rect x="580" y="552" width="16" height="123" fill="#15181C"/>
+
+    <!-- Student (focused, taking exam) -->
+    <g id="student">
+        <!-- Chair -->
+        <polygon points="170,355 225,355 245,510 145,510" fill="#15181C" stroke="#252A32" stroke-width="2"/>
+
+        <!-- Legs -->
+        <polygon points="250,510 285,510 305,675 255,675" fill="#0F172A"/>
+        <polygon points="295,510 330,510 360,675 310,675" fill="#1E293B"/>
+
+        <!-- Torso (leaning forward, focused) -->
+        <polygon points="215,510 255,345 355,345 385,510" fill="#E2E8F0"/>
+        <!-- Shirt details -->
+        <polygon points="255,345 305,430 355,345" fill="#F8FAFC"/>
+        <polygon points="295,345 305,410 315,345" fill="#334155"/> <!-- Collar/detail -->
+
+        <!-- Neck -->
+        <rect x="290" y="305" width="24" height="40" fill="#E2E8F0"/>
+
+        <!-- Head (angled toward laptop) -->
+        <polygon points="275,245 335,245 348,290 312,320 268,305" fill="#F8FAFC"/>
+        <!-- Hair -->
+        <polygon points="265,255 280,220 330,215 353,250 338,265 283,260" fill="#0F172A"/>
+
+        <!-- Left arm (writing/resting) -->
+        <polygon points="245,360 200,460 225,500 250,485 220,440 265,370" fill="#CBD5E1"/>
+        <polygon points="215,495 240,495 235,510 210,510" fill="#F8FAFC"/>
+
+        <!-- Right arm (on laptop) -->
+        <polygon points="345,360 415,440 465,490 450,505 395,455 325,375" fill="#E2E8F0"/>
+        <polygon points="450,485 475,485 470,500 445,500" fill="#F8FAFC"/>
+
+        <!-- Pen/pencil in hand -->
+        <rect x="218" y="485" width="3" height="25" fill="#334155"/>
+    </g>
+
+    <!-- Laptop -->
+    <g id="laptop">
+        <!-- Base -->
+        <polygon points="410,490 570,490 590,510 390,510" fill="#475569"/>
+        <polygon points="390,510 590,510 590,515 390,515" fill="#1E293B"/>
+        <!-- Keyboard detail -->
+        <rect x="420" y="496" width="140" height="3" fill="#1E293B" opacity="0.5"/>
+
+        <!-- Screen frame -->
+        <polygon points="420,350 560,350 570,490 410,490" fill="#0F172A" stroke="#64748B" stroke-width="3"/>
+        <!-- Screen display -->
+        <polygon points="426,358 554,358 562,482 418,482" fill="#101724"/>
+
+        <!-- Exam interface on laptop -->
+        <rect x="435" y="370" width="110" height="22" fill="#155DFC" opacity="0.2"/>
+        <text x="445" y="385" font-size="10" fill="#FFFFFF" class="label" opacity="0.8">QUESTION 15/20</text>
+
+        <!-- Multiple choice options -->
+        <g transform="translate(435,405)">
+            <rect x="0" y="0" width="8" height="8" fill="none" stroke="#64748B" stroke-width="1.5"/>
+            <rect x="15" y="1" width="75" height="6" fill="#334155"/>
+
+            <rect x="0" y="15" width="8" height="8" fill="none" stroke="#64748B" stroke-width="1.5"/>
+            <rect x="15" y="16" width="85" height="6" fill="#334155"/>
+
+            <rect x="0" y="30" width="8" height="8" fill="#155DFC"/>
+            <rect x="15" y="31" width="70" height="6" fill="#334155"/>
+
+            <rect x="0" y="45" width="8" height="8" fill="none" stroke="#64748B" stroke-width="1.5"/>
+            <rect x="15" y="46" width="80" height="6" fill="#334155"/>
+        </g>
+
+        <!-- Timer indicator -->
+        <text x="445" y="470" font-size="9" fill="#94A3B8" class="mono">TIME: 35:42</text>
+    </g>
+
+    <!-- Data projection lines -->
+    <g stroke="#155DFC" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6">
+        <line x1="560" y1="365" x2="655" y2="165"/>
+        <line x1="565" y1="425" x2="655" y2="285"/>
+        <line x1="570" y1="490" x2="655" y2="410"/>
+    </g>
+    <rect x="651" y="161" width="8" height="8" fill="#155DFC" transform="rotate(45 655 165)"/>
+    <rect x="651" y="281" width="8" height="8" fill="#155DFC" transform="rotate(45 655 285)"/>
+    <rect x="651" y="406" width="8" height="8" fill="#155DFC" transform="rotate(45 655 410)"/>
+
+    <!-- Main prediction dashboard -->
+    <g id="prediction-dashboard" transform="translate(655,75)">
+        <!-- Main panel -->
+        <rect x="0" y="0" width="505" height="355" fill="#15181C" stroke="#155DFC" stroke-width="2"/>
+
+        <!-- Header -->
+        <rect x="0" y="0" width="505" height="44" fill="#155DFC" opacity="0.10"/>
+        <line x1="0" y1="44" x2="505" y2="44" stroke="#155DFC" stroke-width="2"/>
+        <text x="24" y="28" fill="#FFFFFF" font-size="14" class="title">AI EXAM PREDICTION ENGINE</text>
+        <text x="416" y="28" fill="#155DFC" font-size="12" class="mono">LIVE</text>
+        <rect x="394" y="18" width="8" height="8" fill="#155DFC" transform="rotate(45 398 22)"/>
+
+        <!-- Success indicator badge -->
+        <g transform="translate(395,70)">
+            <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="#155DFC" opacity="0.15" stroke="#155DFC" stroke-width="2"/>
+            <polygon points="40,12 68,26 68,54 40,68 12,54 12,26" fill="#155DFC" opacity="0.3"/>
+            <!-- Large checkmark -->
+            <polyline points="26,40 36,50 56,28" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+        </g>
+
+        <!-- Main prediction result -->
+        <text x="30" y="110" fill="#FFFFFF" font-size="42" class="title" letter-spacing="-1">PASS PREDICTED</text>
+        <text x="30" y="137" fill="#94A3B8" font-size="13" class="label">FINAL GRADE FORECAST</text>
+
+        <!-- Confidence score -->
+        <text x="30" y="182" fill="#FFFFFF" font-size="12" class="title">PREDICTION CONFIDENCE</text>
+        <text x="408" y="182" fill="#155DFC" font-size="18" class="mono title">94.8%</text>
+        <rect x="30" y="197" width="445" height="14" fill="#252A32"/>
+        <rect x="30" y="197" width="422" height="14" fill="#155DFC"/>
+        <!-- Bar segments -->
+        <line x1="141" y1="197" x2="141" y2="211" stroke="#15181C" stroke-width="2"/>
+        <line x1="252" y1="197" x2="252" y2="211" stroke="#15181C" stroke-width="2"/>
+        <line x1="363" y1="197" x2="363" y2="211" stroke="#15181C" stroke-width="2"/>
+
+        <!-- Performance metrics -->
+        <text x="30" y="248" fill="#64748B" font-size="10" class="mono">PERFORMANCE ANALYSIS</text>
+
+        <g transform="translate(30,258)">
+            <!-- Current score -->
+            <text x="0" y="14" fill="#FFFFFF" font-size="11" class="label">Current Average</text>
+            <rect x="155" y="5" width="200" height="8" fill="#252A32"/>
+            <rect x="155" y="5" width="184" height="8" fill="#155DFC"/>
+            <text x="365" y="14" fill="#155DFC" font-size="11" class="mono">92%</text>
+
+            <!-- Exam pace -->
+            <text x="0" y="38" fill="#FFFFFF" font-size="11" class="label">Answer Accuracy</text>
+            <rect x="155" y="29" width="200" height="8" fill="#252A32"/>
+            <rect x="155" y="29" width="178" height="8" fill="#155DFC"/>
+            <text x="365" y="38" fill="#155DFC" font-size="11" class="mono">89%</text>
+
+            <!-- Consistency -->
+            <text x="0" y="62" fill="#FFFFFF" font-size="11" class="label">Study Consistency</text>
+            <rect x="155" y="53" width="200" height="8" fill="#252A32"/>
+            <rect x="155" y="53" width="194" height="8" fill="#155DFC"/>
+            <text x="365" y="62" fill="#155DFC" font-size="11" class="mono">97%</text>
+        </g>
+
+        <!-- Mini progress chart -->
+        <g transform="translate(395,240)">
+            <text x="0" y="12" fill="#64748B" font-size="10" class="mono">TREND</text>
+            <polyline points="0,60 0,25 16,30 32,22 48,26 64,18 80,14" fill="none" stroke="#155DFC" stroke-width="3" stroke-linejoin="miter"/>
+            <rect x="-2" y="58" width="4" height="4" fill="#155DFC" transform="rotate(45 0 60)"/>
+            <rect x="14" y="28" width="4" height="4" fill="#155DFC" transform="rotate(45 16 30)"/>
+            <rect x="30" y="20" width="4" height="4" fill="#155DFC" transform="rotate(45 32 22)"/>
+            <rect x="46" y="24" width="4" height="4" fill="#155DFC" transform="rotate(45 48 26)"/>
+            <rect x="62" y="16" width="4" height="4" fill="#155DFC" transform="rotate(45 64 18)"/>
+            <rect x="78" y="12" width="4" height="4" fill="#FFFFFF" transform="rotate(45 80 14)"/>
+        </g>
+    </g>
+
+    <!-- Icon cards (educational symbols) -->
+    <g id="icon-cards" transform="translate(655,455)">
+
+        <!-- Card 1: Progress tracking -->
+        <g>
+            <rect x="0" y="0" width="115" height="115" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="115" height="4" fill="#155DFC"/>
+            <!-- Chart icon -->
+            <g transform="translate(20,25)">
+                <polyline points="0,50 0,0" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <polyline points="0,50 50,50" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <polyline points="5,42 18,28 30,34 42,18 50,12" fill="none" stroke="#155DFC" stroke-width="3"/>
+                <rect x="3" y="40" width="4" height="4" fill="#155DFC" transform="rotate(45 5 42)"/>
+                <rect x="16" y="26" width="4" height="4" fill="#155DFC" transform="rotate(45 18 28)"/>
+                <rect x="28" y="32" width="4" height="4" fill="#155DFC" transform="rotate(45 30 34)"/>
+                <rect x="40" y="16" width="4" height="4" fill="#FFFFFF" transform="rotate(45 42 18)"/>
+                <rect x="48" y="10" width="4" height="4" fill="#155DFC" transform="rotate(45 50 12)"/>
+            </g>
+            <text x="18" y="94" fill="#FFFFFF" font-size="10" class="label">PROGRESS</text>
+            <text x="18" y="107" fill="#155DFC" font-size="9" class="mono">STRONG</text>
+        </g>
+
+        <!-- Card 2: Checkmark validation -->
+        <g transform="translate(130,0)">
+            <rect x="0" y="0" width="115" height="115" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="115" height="4" fill="#155DFC"/>
+            <!-- Checkmark icon -->
+            <g transform="translate(25,25)">
+                <rect x="0" y="0" width="45" height="45" fill="none" stroke="#155DFC" stroke-width="2"/>
+                <polyline points="10,23 20,33 35,15" fill="none" stroke="#155DFC" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+            </g>
+            <text x="18" y="94" fill="#FFFFFF" font-size="10" class="label">VALIDATED</text>
+            <text x="18" y="107" fill="#155DFC" font-size="9" class="mono">APPROVED</text>
+        </g>
+
+        <!-- Card 3: Neural analysis -->
+        <g transform="translate(260,0)">
+            <rect x="0" y="0" width="115" height="115" fill="#15181C" stroke="#155DFC" stroke-width="1.5"/>
+            <rect x="0" y="0" width="115" height="4" fill="#155DFC"/>
+            <!-- Mini neural network -->
+            <g transform="translate(25,25)" stroke="#155DFC" stroke-width="1.5" fill="none">
+                <line x1="10" y1="15" x2="25" y2="22"/>
+                <line x1="25" y1="22" x2="40" y2="15"/>
+                <line x1="10" y1="15" x2="25" y2="32"/>
+                <line x1="40" y1="15" x2="25" y2="32"/>
+                <rect x="6" y="11" width="8" height="8" fill="#155DFC" transform="rotate(45 10 15)"/>
+                <rect x="21" y="18" width="8" height="8" fill="#155DFC" transform="rotate(45 25 22)"/>
+                <rect x="36" y="11" width="8" height="8" fill="#155DFC" transform="rotate(45 40 15)"/>
+                <rect x="21" y="28" width="8" height="8" fill="#FFFFFF" transform="rotate(45 25 32)"/>
+            </g>
+            <text x="18" y="94" fill="#FFFFFF" font-size="10" class="label">AI MODEL</text>
+            <text x="18" y="107" fill="#155DFC" font-size="9" class="mono">ACTIVE</text>
+        </g>
+
+        <!-- Card 4: Target grade -->
+        <g transform="translate(390,0)">
+            <rect x="0" y="0" width="115" height="115" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="115" height="4" fill="#155DFC"/>
+            <!-- Target icon -->
+            <g transform="translate(27,27)" stroke="#155DFC" fill="none">
+                <rect x="10" y="10" width="30" height="30" stroke-width="2"/>
+                <rect x="17" y="17" width="16" height="16" stroke-width="2"/>
+                <line x1="25" y1="3" x2="25" y2="47" stroke-width="2"/>
+                <line x1="3" y1="25" x2="47" y2="25" stroke-width="2"/>
+            </g>
+            <text x="18" y="94" fill="#FFFFFF" font-size="10" class="label">TARGET</text>
+            <text x="18" y="107" fill="#155DFC" font-size="9" class="mono">ON TRACK</text>
+        </g>
+
+    </g>
+
+    <!-- Foreground accents -->
+    <g stroke="#155DFC" stroke-width="1.5" opacity="0.6">
+        <line x1="40" y1="40" x2="60" y2="40"/>
+        <line x1="50" y1="30" x2="50" y2="50"/>
+        <line x1="1140" y1="635" x2="1160" y2="635"/>
+        <line x1="1150" y1="625" x2="1150" y2="645"/>
+    </g>
+
+    <!-- Corner frames -->
+    <g stroke="#FFFFFF" stroke-width="2" opacity="0.10" fill="none">
+        <polyline points="20,60 20,20 60,20"/>
+        <polyline points="1180,60 1180,20 1140,20"/>
+        <polyline points="20,615 20,655 60,655"/>
+        <polyline points="1180,615 1180,655 1140,655"/>
+    </g>
+
+    <!-- Structural grid lines -->
+    <g stroke="#FFFFFF" stroke-width="1" opacity="0.04">
+        <line x1="0" y1="200" x2="1200" y2="200"/>
+        <line x1="0" y1="410" x2="1200" y2="410"/>
+        <line x1="640" y1="0" x2="640" y2="675"/>
+    </g>
+
+</svg>

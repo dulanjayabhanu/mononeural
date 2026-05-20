@@ -1,0 +1,171 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" aria-label="Weighted Sum Mathematical Concept Diagram">
+    <defs>
+        <!-- Sharp minimalist arrow markers -->
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 2 L 10 5 L 0 8 Z" fill="#155DFC" />
+        </marker>
+        <marker id="arrow-gray" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 2 L 10 5 L 0 8 Z" fill="#4F5D73" />
+        </marker>
+    </defs>
+
+    <style>
+        /* Strict typographical controls for perfect non-overlapping alignment */
+        .txt-base { font-family: system-ui, -apple-system, sans-serif; font-size: 34px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+        .txt-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 700; fill: #A0B0C4; text-anchor: middle; dominant-baseline: middle; }
+        .txt-sym { font-family: system-ui, -apple-system, sans-serif; font-size: 38px; font-weight: 400; fill: #155DFC; text-anchor: middle; dominant-baseline: middle; }
+        .txt-i { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+        .txt-label { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 700; fill: #6A7A90; text-anchor: middle; letter-spacing: 2px; }
+
+        /* Box Styles with sharp zero-radius geometry */
+        .box-dark { fill: #252B36; stroke: #155DFC; stroke-width: 2; }
+        .box-accent { fill: #155DFC; stroke: #155DFC; stroke-width: 2; }
+        .box-outline { fill: #252B36; stroke: #4F5D73; stroke-width: 2; }
+    </style>
+
+    <!-- Deep dark minimal background -->
+    <rect width="1200" height="675" fill="#1E2227" />
+
+    <!-- Abstract geometric framing corners -->
+    <path d="M 30 50 L 30 30 L 50 30" stroke="#4F5D73" stroke-width="2" fill="none" stroke-linejoin="miter" opacity="0.5" />
+    <path d="M 1170 625 L 1170 645 L 1150 645" stroke="#4F5D73" stroke-width="2" fill="none" stroke-linejoin="miter" opacity="0.5" />
+    <path d="M 1150 30 L 1170 30 L 1170 50" stroke="#4F5D73" stroke-width="2" fill="none" stroke-linejoin="miter" opacity="0.5" />
+    <path d="M 50 645 L 30 645 L 30 625" stroke="#4F5D73" stroke-width="2" fill="none" stroke-linejoin="miter" opacity="0.5" />
+
+    <!-- ========================================== -->
+    <!-- STRUCTURAL CONNECTIONS (Drawn Behind)      -->
+    <!-- ========================================== -->
+
+    <!-- 1. Output (y) Connection Line -->
+    <path d="M 120 215 L 120 340 L 300 340 L 300 445" fill="none" stroke="#4F5D73" stroke-width="2" marker-end="url(#arrow-gray)" stroke-linejoin="miter" />
+    <circle cx="120" cy="215" r="4" fill="#4F5D73" />
+
+    <!-- 2. Summation Group Connection Bracket -->
+    <!-- Vertical Drops from Input Terms -->
+    <line x1="290" y1="215" x2="290" y2="300" stroke="#4F5D73" stroke-width="2" />
+    <line x1="510" y1="215" x2="510" y2="300" stroke="#4F5D73" stroke-width="2" />
+    <line x1="910" y1="215" x2="910" y2="300" stroke="#4F5D73" stroke-width="2" />
+    <circle cx="290" cy="215" r="4" fill="#4F5D73" />
+    <circle cx="510" cy="215" r="4" fill="#4F5D73" />
+    <circle cx="910" cy="215" r="4" fill="#4F5D73" />
+
+    <!-- Horizontal Grouping Line -->
+    <line x1="290" y1="300" x2="910" y2="300" stroke="#4F5D73" stroke-width="2" />
+
+    <!-- Main Vertical Drop to Condensed Formula -->
+    <path d="M 660 300 L 660 445" fill="none" stroke="#155DFC" stroke-width="2" marker-end="url(#arrow-blue)" />
+    <circle cx="660" cy="300" r="4" fill="#155DFC" />
+
+    <!-- 3. Bias (b) Connection Line -->
+    <path d="M 1100 215 L 1100 260 L 1000 260 L 1000 445" fill="none" stroke="#4F5D73" stroke-width="2" marker-end="url(#arrow-gray)" stroke-linejoin="miter" />
+    <circle cx="1100" cy="215" r="4" fill="#4F5D73" />
+
+    <!-- Connector Text -->
+    <text x="660" y="375" class="txt-label" fill="#155DFC">COLLAPSES TO SUMMATION</text>
+
+    <!-- ========================================== -->
+    <!-- ROW 1: EXPANDED FORMULA (Y Center = 180)   -->
+    <!-- ========================================== -->
+
+    <!-- Top Labels -->
+    <text x="120" y="110" class="txt-label">OUTPUT</text>
+    <text x="600" y="110" class="txt-label">WEIGHTED INPUT TERMS</text>
+    <text x="1100" y="110" class="txt-label">BIAS</text>
+
+    <!-- Output Box: y -->
+    <rect x="90" y="145" width="60" height="70" class="box-outline" />
+    <text x="120" y="182" class="txt-base">y</text>
+
+    <!-- Operator: = -->
+    <text x="190" y="180" class="txt-sym">=</text>
+
+    <!-- Box 1: w1 · x1 -->
+    <rect x="230" y="145" width="120" height="70" class="box-dark" />
+    <text x="260" y="182" class="txt-base">w</text>
+    <text x="274" y="196" class="txt-sub">1</text>
+    <text x="290" y="180" class="txt-sym">·</text>
+    <text x="306" y="182" class="txt-base">x</text>
+    <text x="320" y="196" class="txt-sub">1</text>
+
+    <!-- Operator: + -->
+    <text x="400" y="180" class="txt-sym">+</text>
+
+    <!-- Box 2: w2 · x2 -->
+    <rect x="450" y="145" width="120" height="70" class="box-dark" />
+    <text x="480" y="182" class="txt-base">w</text>
+    <text x="494" y="196" class="txt-sub">2</text>
+    <text x="510" y="180" class="txt-sym">·</text>
+    <text x="526" y="182" class="txt-base">x</text>
+    <text x="540" y="196" class="txt-sub">2</text>
+
+    <!-- Operator: + -->
+    <text x="620" y="180" class="txt-sym">+</text>
+
+    <!-- Ellipsis ... -->
+    <circle cx="690" cy="180" r="3" fill="#A0B0C4" />
+    <circle cx="710" cy="180" r="3" fill="#A0B0C4" />
+    <circle cx="730" cy="180" r="3" fill="#A0B0C4" />
+
+    <!-- Operator: + -->
+    <text x="800" y="180" class="txt-sym">+</text>
+
+    <!-- Box n: wn · xn -->
+    <rect x="850" y="145" width="120" height="70" class="box-dark" />
+    <text x="880" y="182" class="txt-base">w</text>
+    <text x="894" y="196" class="txt-sub">n</text>
+    <text x="910" y="180" class="txt-sym">·</text>
+    <text x="926" y="182" class="txt-base">x</text>
+    <text x="940" y="196" class="txt-sub">n</text>
+
+    <!-- Operator: + -->
+    <text x="1020" y="180" class="txt-sym">+</text>
+
+    <!-- Box Bias: b -->
+    <rect x="1065" y="145" width="70" height="70" class="box-accent" />
+    <text x="1100" y="182" class="txt-base">b</text>
+
+
+    <!-- ========================================== -->
+    <!-- ROW 2: CONDENSED FORMULA (Y Center = 500)  -->
+    <!-- ========================================== -->
+
+    <!-- Output Box: y -->
+    <rect x="270" y="465" width="60" height="70" class="box-outline" />
+    <text x="300" y="502" class="txt-base">y</text>
+
+    <!-- Operator: = -->
+    <text x="380" y="500" class="txt-sym">=</text>
+
+    <!-- Summation Symbol (Strict Sharp Geometric Path) -->
+    <path d="M 515 460 L 455 460 L 490 500 L 455 540 L 515 540" fill="none" stroke="#155DFC" stroke-width="5" stroke-linejoin="miter" stroke-linecap="square" />
+    <text x="485" y="440" class="txt-i">n</text>
+    <text x="485" y="565" class="txt-i">i=1</text>
+
+    <!-- Bracket Open -->
+    <text x="560" y="498" class="txt-sym" fill="#6A7A90">(</text>
+
+    <!-- Box Condensed Term: wi · xi -->
+    <rect x="600" y="465" width="120" height="70" class="box-dark" />
+    <text x="630" y="502" class="txt-base">w</text>
+    <text x="644" y="516" class="txt-sub">i</text>
+    <text x="660" y="500" class="txt-sym">·</text>
+    <text x="676" y="502" class="txt-base">x</text>
+    <text x="690" y="516" class="txt-sub">i</text>
+
+    <!-- Bracket Close -->
+    <text x="760" y="498" class="txt-sym" fill="#6A7A90">)</text>
+
+    <!-- Operator: + -->
+    <text x="840" y="500" class="txt-sym">+</text>
+
+    <!-- Box Bias: b -->
+    <rect x="965" y="465" width="70" height="70" class="box-accent" />
+    <text x="1000" y="502" class="txt-base">b</text>
+
+    <!-- Bottom Labels -->
+    <text x="300" y="605" class="txt-label">SCALAR RESULT</text>
+    <text x="485" y="605" class="txt-label">SUMMATION</text>
+    <text x="660" y="605" class="txt-label">DOT PRODUCT</text>
+    <text x="1000" y="605" class="txt-label">BIAS TERM</text>
+
+</svg>

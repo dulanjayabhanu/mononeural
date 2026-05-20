@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+    <defs>
+        <!-- Arrowhead Marker for Data Flow -->
+        <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M 0 2 L 10 5 L 0 8 z" fill="#155DFC" />
+        </marker>
+        <marker id="arrow-white" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M 0 2 L 10 5 L 0 8 z" fill="#FFFFFF" opacity="0.6" />
+        </marker>
+
+        <!-- Subtle Glow for Accent Elements -->
+        <filter id="blue-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+    </defs>
+
+    <style>
+        .bg { fill: #1E2227; }
+        .grid-line { stroke: #282E36; stroke-width: 1px; stroke-dasharray: 4 4; }
+
+        .node-base { fill: #262B33; stroke: #3C4450; stroke-width: 2.5px; }
+        .node-neuron { fill: #22272E; stroke: #155DFC; stroke-width: 3.5px; }
+        .node-output { fill: #155DFC; stroke: #FFFFFF; stroke-width: 2.5px; }
+
+        .flow-line { stroke: #155DFC; stroke-width: 3px; fill: none; }
+        .bias-line { stroke: #FFFFFF; stroke-width: 2.5px; stroke-dasharray: 6 4; fill: none; opacity: 0.6; }
+
+        .label-title { font-family: 'SF Pro Display', -apple-system, Roboto, Helvetica, sans-serif; font-weight: 700; font-size: 16px; fill: #FFFFFF; letter-spacing: 1px; text-anchor: middle; }
+        .label-sub { font-family: 'SF Pro Text', -apple-system, Roboto, Helvetica, sans-serif; font-weight: 500; font-size: 14px; fill: #A3ADB8; text-anchor: middle; }
+        .math-text { font-family: 'Cambria Math', 'Times New Roman', serif; font-style: italic; font-size: 22px; fill: #FFFFFF; text-anchor: middle; }
+        .badge-text { font-family: -apple-system, Roboto, Helvetica, sans-serif; font-weight: 600; font-size: 13px; fill: #1E2227; text-anchor: middle; }
+
+        .pill-bg { fill: #2E3540; stroke: #464F5B; stroke-width: 1.5px; }
+        .pill-bg-blue { fill: #155DFC; }
+    </style>
+
+    <!-- Background -->
+    <rect width="1200" height="800" class="bg" />
+
+    <!-- Technical Grid Background (Concept Framing) -->
+    <line x1="120" y1="0" x2="120" y2="800" class="grid-line" />
+    <line x1="600" y1="0" x2="600" y2="800" class="grid-line" />
+    <line x1="1080" y1="0" x2="1080" y2="800" class="grid-line" />
+    <line x1="0" y1="400" x2="1200" y2="400" class="grid-line" />
+
+    <!-- ==================== CONNECTIONS / FLOW LINES ==================== -->
+    <g id="connections">
+        <!-- Inputs to Soma -->
+        <path d="M 240 240 L 465 350" class="flow-line" marker-end="url(#arrow-blue)" />
+        <path d="M 240 400 L 460 400" class="flow-line" marker-end="url(#arrow-blue)" />
+        <path d="M 240 560 L 465 450" class="flow-line" marker-end="url(#arrow-blue)" />
+
+        <!-- Bias to Soma -->
+        <path d="M 600 210 L 600 265" class="bias-line" marker-end="url(#arrow-white)" />
+
+        <!-- Soma to Output -->
+        <path d="M 720 400 L 930 400" class="flow-line" marker-end="url(#arrow-blue)" filter="url(#blue-glow)" />
+    </g>
+
+    <!-- ==================== WEIGHT & BIAS LABELS ==================== -->
+    <g id="weights-labels">
+        <!-- Weight 1 -->
+        <g transform="translate(350, 275)">
+            <rect x="-35" y="-15" width="70" height="30" rx="15" class="pill-bg" />
+            <text y="5" class="math-text" font-size="16">w₁</text>
+        </g>
+
+        <!-- Weight 2 -->
+        <g transform="translate(350, 400)">
+            <rect x="-35" y="-15" width="70" height="30" rx="15" class="pill-bg" />
+            <text y="5" class="math-text" font-size="16">w₂</text>
+        </g>
+
+        <!-- Weight 3 -->
+        <g transform="translate(350, 525)">
+            <rect x="-35" y="-15" width="70" height="30" rx="15" class="pill-bg" />
+            <text y="5" class="math-text" font-size="16">w₃</text>
+        </g>
+
+        <!-- Bias Label -->
+        <g transform="translate(600, 170)">
+            <rect x="-40" y="-18" width="80" height="36" rx="18" class="pill-bg" stroke="#FFFFFF" />
+            <text y="6" class="math-text" font-size="18">b = 1</text>
+            <text y="-28" class="label-sub" font-size="12">BIAS</text>
+        </g>
+    </g>
+
+    <!-- ==================== INPUT LAYER ==================== -->
+    <g id="input-nodes">
+        <text x="200" y="140" class="label-title">INPUT LAYER</text>
+        <text x="200" y="160" class="label-sub">Incoming Data Features</text>
+
+        <!-- Node 1 -->
+        <circle cx="200" cy="240" r="40" class="node-base" />
+        <text x="200" y="247" class="math-text">x₁</text>
+
+        <!-- Node 2 -->
+        <circle cx="200" cy="400" r="40" class="node-base" />
+        <text x="200" y="407" class="math-text">x₂</text>
+
+        <!-- Node 3 -->
+        <circle cx="200" cy="560" r="40" class="node-base" />
+        <text x="200" y="567" class="math-text">x₃</text>
+    </g>
+
+    <!-- ==================== ARTIFICIAL NEURON (SOMA) ==================== -->
+    <g id="central-neuron">
+        <text x="600" y="140" class="label-title">ARTIFICIAL NEURON</text>
+        <text x="600" y="160" class="label-sub">Processing Unit</text>
+
+        <!-- Main Soma Outer Container -->
+        <circle cx="600" cy="400" r="120" class="node-neuron" filter="url(#blue-glow)" />
+
+        <!-- Soma Internal Split (Transfer Function / Net Input) -->
+        <line x1="600" y1="280" x2="600" y2="520" stroke="#155DFC" stroke-width="2" stroke-dasharray="4 4" />
+
+        <!-- Left Half: Summation -->
+        <text x="540" y="395" class="math-text" font-size="36" font-style="normal">Σ</text>
+        <text x="540" y="425" class="label-sub" font-size="11">SUM</text>
+
+        <!-- Right Half: Activation Function Symbol (Step/Sigmoid Curve) -->
+        <g transform="translate(645, 375)">
+            <path d="M -20 30 C 0 30 0 0 20 0" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" />
+            <line x1="-25" y1="15" x2="25" y2="15" stroke="#464F5B" stroke-width="1" />
+            <line x1="0" y1="35" x2="0" y2="-10" stroke="#464F5B" stroke-width="1" />
+        </g>
+        <text x="655" y="425" class="label-sub" font-size="11">ACTIVATION</text>
+    </g>
+
+    <!-- ==================== OUTPUT LAYER ==================== -->
+    <g id="output-node">
+        <text x="980" y="140" class="label-title">OUTPUT LAYER</text>
+        <text x="980" y="160" class="label-sub">Final Result</text>
+
+        <!-- Signal Label on Line -->
+        <g transform="translate(830, 400)">
+            <rect x="-45" y="-15" width="90" height="30" rx="15" class="pill-bg-blue" />
+            <text y="5" class="badge-text" fill="#FFFFFF">f(net)</text>
+        </g>
+
+        <!-- Node -->
+        <circle cx="980" cy="400" r="50" class="node-output" filter="url(#blue-glow)" />
+        <text x="980" y="407" class="math-text">y</text>
+        <text x="980" y="480" class="label-title" font-size="14">Output</text>
+    </g>
+
+    <!-- Diagram Legend / Footer -->
+    <g transform="translate(600, 750)">
+        <text class="label-sub" font-size="13">Net Input = (x₁·w₁ + x₂·w₂ + x₃·w₃) + b</text>
+    </g>
+</svg>

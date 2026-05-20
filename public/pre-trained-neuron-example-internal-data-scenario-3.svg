@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" shape-rendering="crispEdges">
+    <defs>
+        <style>
+            text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+            .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+            .title { font-weight: 800; letter-spacing: 1px; }
+            .label { font-weight: 600; letter-spacing: 0.5px; }
+        </style>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.03"/>
+            <rect x="39" y="39" width="2" height="2" fill="#155DFC" opacity="0.15"/>
+        </pattern>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+
+    <!-- Background Neural Network / Data Nodes -->
+    <g stroke="#155DFC" stroke-width="1.5" fill="none" opacity="0.2">
+        <!-- Top Left Cluster -->
+        <line x1="80" y1="120" x2="160" y2="80"/>
+        <line x1="160" y1="80" x2="220" y2="150"/>
+        <line x1="80" y1="120" x2="140" y2="200"/>
+        <line x1="140" y1="200" x2="220" y2="150"/>
+        <line x1="220" y1="150" x2="300" y2="110"/>
+        <rect x="76" y="116" width="8" height="8" fill="#155DFC" transform="rotate(45 80 120)"/>
+        <rect x="156" y="76" width="8" height="8" fill="#155DFC" transform="rotate(45 160 80)"/>
+        <rect x="216" y="146" width="8" height="8" fill="#155DFC" transform="rotate(45 220 150)"/>
+        <rect x="136" y="196" width="8" height="8" fill="#155DFC" transform="rotate(45 140 200)"/>
+        <rect x="296" y="106" width="8" height="8" fill="#155DFC" transform="rotate(45 300 110)"/>
+
+        <!-- Bottom Right Cluster -->
+        <line x1="950" y1="580" x2="1020" y2="540"/>
+        <line x1="1020" y1="540" x2="1100" y2="590"/>
+        <line x1="1020" y1="540" x2="1060" y2="480"/>
+        <rect x="946" y="576" width="8" height="8" fill="#155DFC" transform="rotate(45 950 580)"/>
+        <rect x="1016" y="536" width="8" height="8" fill="#155DFC" transform="rotate(45 1020 540)"/>
+        <rect x="1096" y="586" width="8" height="8" fill="#155DFC" transform="rotate(45 1100 590)"/>
+        <rect x="1056" y="476" width="8" height="8" fill="#155DFC" transform="rotate(45 1060 480)"/>
+    </g>
+
+    <!-- Environment: Desk -->
+    <polygon points="60,520 620,520 660,550 20,550" fill="#252A32"/>
+    <rect x="20" y="550" width="640" height="12" fill="#1A1E24"/>
+    <rect x="100" y="562" width="16" height="113" fill="#15181C"/>
+    <rect x="560" y="562" width="16" height="113" fill="#15181C"/>
+
+    <!-- Professional Individual (Sharp Geometric Vector Style) -->
+    <g id="person">
+        <!-- Chair Backrest -->
+        <polygon points="160,340 220,340 240,520 140,520" fill="#15181C" stroke="#252A32" stroke-width="2"/>
+
+        <!-- Legs -->
+        <polygon points="240,520 280,520 300,675 250,675" fill="#0F172A"/>
+        <polygon points="290,520 330,520 360,675 310,675" fill="#1E293B"/>
+
+        <!-- Torso / Suit -->
+        <polygon points="210,520 250,330 350,330 380,520" fill="#E2E8F0"/>
+        <!-- Suit Lapels / Shadows -->
+        <polygon points="250,330 300,420 350,330" fill="#CBD5E1"/>
+        <polygon points="290,330 300,400 310,330" fill="#0F172A"/> <!-- Tie -->
+
+        <!-- Neck & Head -->
+        <rect x="285" y="290" width="24" height="40" fill="#E2E8F0"/>
+        <!-- Face (Angled toward screen) -->
+        <polygon points="270,230 330,230 345,275 310,305 265,290" fill="#F8FAFC"/>
+        <!-- Hair -->
+        <polygon points="260,240 275,205 325,200 350,235 335,250 280,245" fill="#0F172A"/>
+        <!-- Sharp Glasses -->
+        <polygon points="295,255 325,255 325,270 295,270" fill="none" stroke="#155DFC" stroke-width="2"/>
+        <line x1="275" y1="262" x2="295" y2="262" stroke="#155DFC" stroke-width="2"/>
+
+        <!-- Left Arm (Resting) -->
+        <polygon points="240,340 200,440 230,490 250,480 225,435 265,350" fill="#CBD5E1"/>
+        <!-- Right Arm (Interacting with laptop) -->
+        <polygon points="340,340 410,430 460,480 445,495 390,445 320,360" fill="#E2E8F0"/>
+
+        <!-- Hands -->
+        <polygon points="220,485 245,485 240,500 215,500" fill="#F8FAFC"/>
+        <polygon points="445,475 470,475 465,490 440,490" fill="#F8FAFC"/>
+    </g>
+
+    <!-- Laptop -->
+    <g id="laptop">
+        <!-- Base -->
+        <polygon points="400,490 560,490 580,510 380,510" fill="#334155"/>
+        <polygon points="380,510 580,510 580,515 380,515" fill="#1E293B"/>
+        <!-- Screen Frame -->
+        <polygon points="410,340 550,340 560,490 400,490" fill="#0F172A" stroke="#475569" stroke-width="3"/>
+        <!-- Screen Display -->
+        <polygon points="416,348 544,348 552,482 408,482" fill="#155DFC" opacity="0.1"/>
+
+        <!-- Screen Content (Mini Dashboard) -->
+        <polygon points="425,360 535,360 537,375 423,375" fill="#155DFC" opacity="0.5"/>
+        <polygon points="422,390 480,390 482,396 420,396" fill="#FFFFFF" opacity="0.3"/>
+        <polygon points="419,410 500,410 502,416 417,416" fill="#FFFFFF" opacity="0.15"/>
+        <polygon points="416,430 470,430 472,436 414,436" fill="#FFFFFF" opacity="0.15"/>
+        <!-- Mini Chart on Laptop -->
+        <polyline points="420,470 450,450 480,460 520,440" fill="none" stroke="#155DFC" stroke-width="2"/>
+    </g>
+
+    <!-- Data Projection Lines -->
+    <g stroke="#155DFC" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5">
+        <line x1="550" y1="360" x2="640" y2="160"/>
+        <line x1="555" y1="420" x2="640" y2="280"/>
+        <line x1="560" y1="480" x2="640" y2="400"/>
+    </g>
+    <!-- Projection Nodes -->
+    <rect x="636" y="156" width="8" height="8" fill="#155DFC"/>
+    <rect x="636" y="276" width="8" height="8" fill="#155DFC"/>
+    <rect x="636" y="396" width="8" height="8" fill="#155DFC"/>
+
+    <!-- MAIN DIGITAL INTERFACE: LOAN APPROVAL DASHBOARD -->
+    <g id="dashboard" transform="translate(640, 80)">
+        <!-- Main Panel -->
+        <rect x="0" y="0" width="500" height="340" fill="#15181C" stroke="#155DFC" stroke-width="2"/>
+
+        <!-- Header -->
+        <rect x="0" y="0" width="500" height="40" fill="#155DFC" opacity="0.1"/>
+        <line x1="0" y1="40" x2="500" y2="40" stroke="#155DFC" stroke-width="2"/>
+        <text x="24" y="26" fill="#FFFFFF" font-size="14" class="title">AI CREDIT DECISION ENGINE</text>
+        <text x="400" y="26" fill="#155DFC" font-size="12" class="mono">LIVE</text>
+        <rect x="380" y="16" width="8" height="8" fill="#155DFC"/>
+
+        <!-- Status Badge / Shield -->
+        <g transform="translate(380, 70)">
+            <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="#155DFC" opacity="0.15" stroke="#155DFC" stroke-width="2"/>
+            <polygon points="40,12 68,26 68,54 40,68 12,54 12,26" fill="#155DFC" opacity="0.3"/>
+            <!-- Sharp Checkmark -->
+            <polyline points="28,40 36,48 54,26" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="miter"/>
+        </g>
+
+        <!-- Main Result Text -->
+        <text x="30" y="110" fill="#FFFFFF" font-size="42" class="title" letter-spacing="-1">LOAN APPROVED</text>
+        <text x="30" y="135" fill="#94A3B8" font-size="13" class="label">PREDICTION CONFIDENCE METRIC</text>
+
+        <!-- Confidence Bar -->
+        <text x="30" y="175" fill="#FFFFFF" font-size="12" class="title">APPROVAL PROBABILITY</text>
+        <text x="410" y="175" fill="#155DFC" font-size="18" class="mono title">98.2%</text>
+        <rect x="30" y="190" width="440" height="14" fill="#252A32"/>
+        <rect x="30" y="190" width="432" height="14" fill="#155DFC"/>
+        <!-- Bar Segments -->
+        <line x1="140" y1="190" x2="140" y2="204" stroke="#15181C" stroke-width="2"/>
+        <line x1="250" y1="190" x2="250" y2="204" stroke="#15181C" stroke-width="2"/>
+        <line x1="360" y1="190" x2="360" y2="204" stroke="#15181C" stroke-width="2"/>
+
+        <!-- Financial Symbol Cards Row -->
+        <g transform="translate(30, 230)">
+
+            <!-- Card 1: Document / Application -->
+            <g transform="translate(0, 0)">
+                <rect x="0" y="0" width="130" height="80" fill="#1E2227" stroke="#334155" stroke-width="1.5"/>
+                <rect x="0" y="0" width="130" height="3" fill="#155DFC"/>
+                <!-- Document Icon -->
+                <g transform="translate(15, 20)">
+                    <polygon points="0,0 20,0 30,10 30,40 0,40" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="miter"/>
+                    <polygon points="20,0 20,10 30,10" fill="#FFFFFF" opacity="0.3"/>
+                    <line x1="8" y1="18" x2="22" y2="18" stroke="#64748B" stroke-width="2"/>
+                    <line x1="8" y1="26" x2="18" y2="26" stroke="#64748B" stroke-width="2"/>
+                </g>
+                <text x="55" y="38" fill="#FFFFFF" font-size="11" class="label">VERIFIED</text>
+                <text x="55" y="54" fill="#64748B" font-size="10" class="mono">DOCS</text>
+            </g>
+
+            <!-- Card 2: Chart / Financial History -->
+            <g transform="translate(155, 0)">
+                <rect x="0" y="0" width="130" height="80" fill="#1E2227" stroke="#334155" stroke-width="1.5"/>
+                <rect x="0" y="0" width="130" height="3" fill="#155DFC"/>
+                <!-- Chart Icon -->
+                <g transform="translate(15, 20)">
+                    <polyline points="0,40 0,0" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                    <polyline points="0,40 30,40" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                    <polyline points="5,30 12,15 20,22 28,5" fill="none" stroke="#155DFC" stroke-width="2" stroke-linejoin="miter"/>
+                    <rect x="3" y="28" width="4" height="4" fill="#155DFC"/>
+                    <rect x="10" y="13" width="4" height="4" fill="#155DFC"/>
+                    <rect x="18" y="20" width="4" height="4" fill="#155DFC"/>
+                    <rect x="26" y="3" width="4" height="4" fill="#155DFC"/>
+                </g>
+                <text x="55" y="38" fill="#FFFFFF" font-size="11" class="label">CASH FLOW</text>
+                <text x="55" y="54" fill="#64748B" font-size="10" class="mono">OPTIMAL</text>
+            </g>
+
+            <!-- Card 3: Percentage / DTI Ratio -->
+            <g transform="translate(310, 0)">
+                <rect x="0" y="0" width="130" height="80" fill="#1E2227" stroke="#155DFC" stroke-width="1.5"/>
+                <rect x="0" y="0" width="130" height="3" fill="#155DFC"/>
+                <!-- Percentage Icon -->
+                <g transform="translate(15, 20)">
+                    <rect x="4" y="4" width="8" height="8" fill="none" stroke="#155DFC" stroke-width="2" transform="rotate(45 8 8)"/>
+                    <rect x="18" y="28" width="8" height="8" fill="none" stroke="#155DFC" stroke-width="2" transform="rotate(45 22 32)"/>
+                    <line x1="4" y1="36" x2="26" y2="4" stroke="#FFFFFF" stroke-width="2"/>
+                </g>
+                <text x="55" y="38" fill="#FFFFFF" font-size="11" class="label">DTI RATIO</text>
+                <text x="55" y="54" fill="#155DFC" font-size="12" class="mono title">22.4%</text>
+            </g>
+
+        </g>
+    </g>
+
+    <!-- Foreground Tech Accents -->
+    <g stroke="#155DFC" stroke-width="1.5" opacity="0.6">
+        <!-- Crosshairs -->
+        <line x1="40" y1="40" x2="60" y2="40"/>
+        <line x1="50" y1="30" x2="50" y2="50"/>
+
+        <line x1="1140" y1="635" x2="1160" y2="635"/>
+        <line x1="1150" y1="625" x2="1150" y2="645"/>
+    </g>
+
+    <!-- Corner Framing -->
+    <g stroke="#FFFFFF" stroke-width="2" opacity="0.1" fill="none">
+        <polyline points="20,60 20,20 60,20"/>
+        <polyline points="1180,60 1180,20 1140,20"/>
+        <polyline points="20,615 20,655 60,655"/>
+        <polyline points="1180,615 1180,655 1140,655"/>
+    </g>
+
+    <!-- Subtle Data Stream Lines -->
+    <g stroke="#FFFFFF" stroke-width="1" opacity="0.05">
+        <line x1="0" y1="200" x2="1200" y2="200"/>
+        <line x1="0" y1="400" x2="1200" y2="400"/>
+        <line x1="400" y1="0" x2="400" y2="675"/>
+        <line x1="800" y1="0" x2="800" y2="675"/>
+    </g>
+
+</svg>

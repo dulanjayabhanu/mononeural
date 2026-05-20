@@ -1,0 +1,1 @@
+export type ChartConfig = Record<string, { label: string, color: string }>

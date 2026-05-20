@@ -1,0 +1,1 @@
+export type DocumentElement = "h1" | "h3" | "p" | "list" | "Fragment"

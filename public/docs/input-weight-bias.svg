@@ -1,0 +1,339 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+
+    <!-- ========================================= -->
+    <!-- DEFINITIONS -->
+    <!-- ========================================= -->
+
+    <defs>
+        <!-- Arrows -->
+        <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#155DFC"/>
+        </marker>
+
+        <marker id="arrowWhite" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#FFFFFF"/>
+        </marker>
+
+        <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#F59E0B"/>
+        </marker>
+
+        <!-- Glow -->
+        <filter id="softGlow">
+            <feGaussianBlur stdDeviation="12" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- ========================================= -->
+    <!-- BACKGROUND GRID -->
+    <!-- ========================================= -->
+
+    <g opacity="0.18" stroke="#2B313B" stroke-width="1">
+        <line x1="0" y1="120" x2="1200" y2="120"/>
+        <line x1="0" y1="240" x2="1200" y2="240"/>
+        <line x1="0" y1="360" x2="1200" y2="360"/>
+        <line x1="0" y1="480" x2="1200" y2="480"/>
+        <line x1="0" y1="600" x2="1200" y2="600"/>
+
+        <line x1="200" y1="0" x2="200" y2="675"/>
+        <line x1="400" y1="0" x2="400" y2="675"/>
+        <line x1="600" y1="0" x2="600" y2="675"/>
+        <line x1="800" y1="0" x2="800" y2="675"/>
+        <line x1="1000" y1="0" x2="1000" y2="675"/>
+    </g>
+
+    <!-- ========================================= -->
+    <!-- LEFT SIDE : INPUT FEATURES -->
+    <!-- ========================================= -->
+
+    <!-- Input Card 1 -->
+    <g transform="translate(90 120)">
+        <rect width="210" height="78" rx="18" fill="#252B36" stroke="#3B4452" stroke-width="2"/>
+
+        <!-- Icon -->
+        <circle cx="38" cy="39" r="18" fill="#2F415E"/>
+        <path d="M38 27 L41 35 L49 35 L42.5 40 L45 48 L38 43 L31 48 L33.5 40 L27 35 L35 35 Z"
+              fill="#8FB4FF"/>
+
+        <!-- Labels -->
+        <text x="75" y="34"
+              fill="#FFFFFF"
+              font-size="18"
+              font-family="Inter, Arial"
+              font-weight="600">
+            Marks
+        </text>
+
+        <text x="75" y="56"
+              fill="#7E8B9F"
+              font-size="13"
+              font-family="Inter, Arial">
+            Input feature x₁
+        </text>
+    </g>
+
+    <!-- Input Card 2 -->
+    <g transform="translate(90 300)">
+        <rect width="210" height="78" rx="18" fill="#252B36" stroke="#3B4452" stroke-width="2"/>
+
+        <!-- Icon -->
+        <circle cx="38" cy="39" r="18" fill="#2F415E"/>
+        <path d="M32 32 H44 V46 H32 Z" fill="#8FB4FF"/>
+        <path d="M38 28 V50" stroke="#1E2227" stroke-width="2"/>
+
+        <!-- Labels -->
+        <text x="75" y="34"
+              fill="#FFFFFF"
+              font-size="18"
+              font-family="Inter, Arial"
+              font-weight="600">
+            Income
+        </text>
+
+        <text x="75" y="56"
+              fill="#7E8B9F"
+              font-size="13"
+              font-family="Inter, Arial">
+            Input feature x₂
+        </text>
+    </g>
+
+    <!-- Input Card 3 -->
+    <g transform="translate(90 480)">
+        <rect width="210" height="78" rx="18" fill="#252B36" stroke="#3B4452" stroke-width="2"/>
+
+        <!-- Icon -->
+        <circle cx="38" cy="39" r="18" fill="#2F415E"/>
+        <rect x="30" y="30" width="16" height="18" rx="2" fill="#8FB4FF"/>
+        <line x1="30" y1="35" x2="46" y2="35" stroke="#1E2227" stroke-width="2"/>
+
+        <!-- Labels -->
+        <text x="75" y="34"
+              fill="#FFFFFF"
+              font-size="18"
+              font-family="Inter, Arial"
+              font-weight="600">
+            Attendance
+        </text>
+
+        <text x="75" y="56"
+              fill="#7E8B9F"
+              font-size="13"
+              font-family="Inter, Arial">
+            Input feature x₃
+        </text>
+    </g>
+
+    <!-- ========================================= -->
+    <!-- CONNECTIONS -->
+    <!-- ========================================= -->
+
+    <!-- Input arrows -->
+    <line x1="300" y1="159" x2="505" y2="260"
+          stroke="#155DFC"
+          stroke-width="3"
+          marker-end="url(#arrowBlue)"/>
+
+    <line x1="300" y1="339" x2="505" y2="339"
+          stroke="#155DFC"
+          stroke-width="3"
+          marker-end="url(#arrowBlue)"/>
+
+    <line x1="300" y1="519" x2="505" y2="418"
+          stroke="#155DFC"
+          stroke-width="3"
+          marker-end="url(#arrowBlue)"/>
+
+    <!-- Weight labels -->
+    <g>
+        <rect x="375" y="182" width="56" height="32" rx="10"
+              fill="#155DFC"/>
+        <text x="403" y="203"
+              text-anchor="middle"
+              fill="#FFFFFF"
+              font-size="15"
+              font-family="Inter, Arial"
+              font-weight="700">
+            w₁
+        </text>
+
+        <rect x="385" y="323" width="56" height="32" rx="10"
+              fill="#155DFC"/>
+        <text x="413" y="344"
+              text-anchor="middle"
+              fill="#FFFFFF"
+              font-size="15"
+              font-family="Inter, Arial"
+              font-weight="700">
+            w₂
+        </text>
+
+        <rect x="375" y="463" width="56" height="32" rx="10"
+              fill="#155DFC"/>
+        <text x="403" y="484"
+              text-anchor="middle"
+              fill="#FFFFFF"
+              font-size="15"
+              font-family="Inter, Arial"
+              font-weight="700">
+            w₃
+        </text>
+    </g>
+
+    <!-- ========================================= -->
+    <!-- BIAS -->
+    <!-- ========================================= -->
+
+    <!-- Bias node -->
+    <g transform="translate(520 80)">
+        <circle cx="0" cy="0" r="38"
+                fill="#2A2417"
+                stroke="#F59E0B"
+                stroke-width="3"/>
+
+        <text x="0" y="6"
+              text-anchor="middle"
+              fill="#FFFFFF"
+              font-size="26"
+              font-family="Inter, Arial"
+              font-weight="700">
+            b
+        </text>
+
+        <text x="0" y="64"
+              text-anchor="middle"
+              fill="#F59E0B"
+              font-size="13"
+              font-family="Inter, Arial"
+              font-weight="600">
+            Bias
+        </text>
+    </g>
+
+    <!-- Bias connection -->
+    <line x1="520" y1="118" x2="600" y2="230"
+          stroke="#F59E0B"
+          stroke-width="3"
+          marker-end="url(#arrowOrange)"/>
+
+    <!-- ========================================= -->
+    <!-- CENTRAL NEURON -->
+    <!-- ========================================= -->
+
+    <!-- Outer glow -->
+    <circle cx="640" cy="339" r="98"
+            fill="#155DFC"
+            opacity="0.08"
+            filter="url(#softGlow)"/>
+
+    <!-- Main neuron -->
+    <circle cx="640" cy="339" r="78"
+            fill="#252B36"
+            stroke="#155DFC"
+            stroke-width="4"/>
+
+    <!-- Sigma symbol -->
+    <path d="
+      M615 302
+      H665
+      L625 339
+      L665 376
+      H615"
+          stroke="#FFFFFF"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+
+    <!-- Small label -->
+    <text x="640" y="445"
+          text-anchor="middle"
+          fill="#7E8B9F"
+          font-size="14"
+          font-family="Inter, Arial"
+          letter-spacing="1">
+        Σ(w·x) + b
+    </text>
+
+    <!-- ========================================= -->
+    <!-- OUTPUT -->
+    <!-- ========================================= -->
+
+    <!-- Output line -->
+    <line x1="718" y1="339" x2="930" y2="339"
+          stroke="#FFFFFF"
+          stroke-width="3"
+          marker-end="url(#arrowWhite)"/>
+
+    <!-- Output node -->
+    <g transform="translate(950 290)">
+        <rect width="170" height="98" rx="22"
+              fill="#252B36"
+              stroke="#FFFFFF"
+              stroke-width="2"/>
+
+        <text x="85" y="42"
+              text-anchor="middle"
+              fill="#7E8B9F"
+              font-size="13"
+              font-family="Inter, Arial"
+              letter-spacing="1">
+            OUTPUT
+        </text>
+
+        <text x="85" y="68"
+              text-anchor="middle"
+              fill="#FFFFFF"
+              font-size="32"
+              font-family="Inter, Arial"
+              font-weight="700">
+            y
+        </text>
+    </g>
+
+    <!-- ========================================= -->
+    <!-- LEGEND -->
+    <!-- ========================================= -->
+
+    <g transform="translate(860 540)">
+        <rect width="270" height="90" rx="18"
+              fill="#252B36"
+              stroke="#2F3743"
+              stroke-width="2"/>
+
+        <!-- Inputs -->
+        <circle cx="28" cy="25" r="8" fill="#8FB4FF"/>
+        <text x="48" y="30"
+              fill="#FFFFFF"
+              font-size="14"
+              font-family="Inter, Arial">
+            Inputs (x)
+        </text>
+
+        <!-- Weights -->
+        <circle cx="28" cy="50" r="8" fill="#155DFC"/>
+        <text x="48" y="55"
+              fill="#FFFFFF"
+              font-size="14"
+              font-family="Inter, Arial">
+            Weights (w)
+        </text>
+
+        <!-- Bias -->
+        <circle cx="28" cy="75" r="8" fill="#F59E0B"/>
+        <text x="48" y="80"
+              fill="#FFFFFF"
+              font-size="14"
+              font-family="Inter, Arial">
+            Bias (b)
+        </text>
+    </g>
+
+</svg>

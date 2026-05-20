@@ -1,0 +1,319 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="arr-blue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 2 L10 5 L0 8Z" fill="#155DFC"/>
+        </marker>
+        <marker id="arr-white" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0 2 L10 5 L0 8Z" fill="#FFFFFF"/>
+        </marker>
+        <clipPath id="graph-clip">
+            <rect x="340" y="120" width="520" height="400"/>
+        </clipPath>
+        <linearGradient id="curve-glow" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#155DFC" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#155DFC" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="flow-grad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#155DFC" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#155DFC" stop-opacity="0.5"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+
+    <!-- Corner accents -->
+    <path d="M30 50 L30 30 L50 30" stroke="#3A4150" stroke-width="2" fill="none"/>
+    <path d="M1170 625 L1170 645 L1150 645" stroke="#3A4150" stroke-width="2" fill="none"/>
+    <path d="M1150 30 L1170 30 L1170 50" stroke="#3A4150" stroke-width="2" fill="none"/>
+    <path d="M50 645 L30 645 L30 625" stroke="#3A4150" stroke-width="2" fill="none"/>
+
+    <!-- ================================================ -->
+    <!-- LEFT INPUT PANEL                                  -->
+    <!-- ================================================ -->
+    <g transform="translate(60, 260)">
+        <!-- Input Box -->
+        <rect x="0" y="0" width="180" height="80" rx="6" fill="#252B36" stroke="#4F5D73" stroke-width="2"/>
+
+        <!-- Weighted Sum Label -->
+        <text x="90" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6A7A90" text-anchor="middle" letter-spacing="2">WEIGHTED SUM</text>
+
+        <!-- z = Σ(wi·xi) + b -->
+        <text x="90" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+            z = Σw·x + b
+        </text>
+
+        <!-- Arrow from input box to graph -->
+        <line x1="180" y1="40" x2="310" y2="40" stroke="#155DFC" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+        <!-- Flow label -->
+        <text x="245" y="30" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#155DFC" text-anchor="middle" letter-spacing="1">INPUT z</text>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- CENTER GRAPH AREA                                 -->
+    <!-- ================================================ -->
+
+    <!-- Graph background panel -->
+    <rect x="320" y="100" width="560" height="440" rx="8" fill="#1A1E24" stroke="#2E343C" stroke-width="2"/>
+
+    <!-- Grid lines (subtle) -->
+    <g stroke="#2A3040" stroke-width="1" opacity="0.6">
+        <!-- Horizontal grid -->
+        <line x1="360" y1="160" x2="860" y2="160"/>
+        <line x1="360" y1="220" x2="860" y2="220"/>
+        <line x1="360" y1="280" x2="860" y2="280"/>
+        <line x1="360" y1="340" x2="860" y2="340"/>
+        <line x1="360" y1="400" x2="860" y2="400"/>
+        <line x1="360" y1="460" x2="860" y2="460"/>
+
+        <!-- Vertical grid -->
+        <line x1="420" y1="130" x2="420" y2="510"/>
+        <line x1="480" y1="130" x2="480" y2="510"/>
+        <line x1="540" y1="130" x2="540" y2="510"/>
+        <line x1="660" y1="130" x2="660" y2="510"/>
+        <line x1="720" y1="130" x2="720" y2="510"/>
+        <line x1="780" y1="130" x2="780" y2="510"/>
+        <line x1="840" y1="130" x2="840" y2="510"/>
+    </g>
+
+    <!-- Axes -->
+    <!-- X Axis -->
+    <line x1="350" y1="340" x2="865" y2="340" stroke="#5A6574" stroke-width="2"/>
+    <!-- Y Axis -->
+    <line x1="600" y1="125" x2="600" y2="515" stroke="#5A6574" stroke-width="2"/>
+
+    <!-- Axis tick marks & labels -->
+    <g font-family="system-ui, sans-serif" font-size="12" fill="#6A7A90" font-weight="600">
+        <!-- X-axis labels -->
+        <line x1="360" y1="336" x2="360" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="360" y="360" text-anchor="middle">-6</text>
+
+        <line x1="420" y1="336" x2="420" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="420" y="360" text-anchor="middle">-4</text>
+
+        <line x1="480" y1="336" x2="480" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="480" y="360" text-anchor="middle">-2</text>
+
+        <line x1="660" y1="336" x2="660" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="660" y="360" text-anchor="middle">2</text>
+
+        <line x1="720" y1="336" x2="720" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="720" y="360" text-anchor="middle">4</text>
+
+        <line x1="780" y1="336" x2="780" y2="344" stroke="#5A6574" stroke-width="2"/>
+        <text x="780" y="360" text-anchor="middle">6</text>
+
+        <!-- Y-axis labels -->
+        <line x1="596" y1="160" x2="604" y2="160" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="164" text-anchor="end">1.0</text>
+
+        <line x1="596" y1="220" x2="604" y2="220" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="224" text-anchor="end">0.8</text>
+
+        <line x1="596" y1="280" x2="604" y2="280" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="284" text-anchor="end">0.6</text>
+
+        <line x1="596" y1="400" x2="604" y2="400" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="404" text-anchor="end">0.2</text>
+
+        <line x1="596" y1="460" x2="604" y2="460" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="464" text-anchor="end">0.0</text>
+
+        <!-- 0.5 line (midpoint emphasis) -->
+        <line x1="596" y1="340" x2="604" y2="340" stroke="#5A6574" stroke-width="2"/>
+        <text x="584" y="344" text-anchor="end" fill="#FFFFFF" font-weight="700">0.5</text>
+    </g>
+
+    <!-- Axis title labels -->
+    <text x="600" y="505" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">INPUT (z)</text>
+    <g transform="translate(345, 320) rotate(-90)">
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">OUTPUT σ(z)</text>
+    </g>
+
+    <!-- Filled area under sigmoid curve (subtle glow) -->
+    <path d="
+    M360 458.5
+    L370 457
+    L380 455
+    L390 452
+    L400 448
+    L410 443
+    L420 436
+    L430 427
+    L440 417
+    L450 404
+    L460 390
+    L470 374
+    L480 357
+    L490 340
+    L500 323
+    L510 307
+    L520 292
+    L530 278
+    L540 267
+    L550 257
+    L560 249
+    L570 243
+    L580 238
+    L590 234
+    L600 231
+    L610 228
+    L620 226
+    L630 224
+    L640 223
+    L650 222
+    L660 221
+    L670 220
+    L680 219.5
+    L690 219
+    L700 218.5
+    L710 218
+    L720 217.5
+    L730 217
+    L740 217
+    L750 216.5
+    L760 216.2
+    L770 216
+    L780 215.8
+    L790 215.5
+    L800 215.3
+    L810 215.1
+    L820 215
+    L830 215
+    L840 215
+    L850 215
+    L860 215
+    L860 460
+    L360 460 Z
+  " fill="url(#curve-glow)" clip-path="url(#graph-clip)" opacity="0.4"/>
+
+    <!-- 0.5 reference dashed line -->
+    <line x1="365" y1="340" x2="855" y2="340" stroke="#155DFC" stroke-width="1" stroke-dasharray="6 4" opacity="0.3"/>
+
+    <!-- ================================================ -->
+    <!-- SIGMOID CURVE (Precise plotted points)            -->
+    <!-- sigmoid(z) = 1/(1+e^-z), z from -6 to 8         -->
+    <!-- y_pixel = 460 - (sigmoid * 300) mapped to canvas -->
+    <!-- Graph area: x:[360-860], y:[160-460]             -->
+    <!-- z=-6 -> x=360, z=0 -> x=600, z=8 -> x=840      -->
+    <!-- sig=0 -> y=460, sig=0.5 -> y=340, sig=1 -> y=160 -->
+    <!-- ================================================ -->
+    <path d="
+    M 360 458
+    C 370 457, 390 454, 400 450
+    C 420 440, 440 422, 460 396
+    C 470 380, 480 362, 490 340
+    C 500 318, 510 298, 520 280
+    C 540 252, 560 234, 580 222
+    C 600 212, 620 205, 640 201
+    C 660 198, 680 196, 700 195
+    C 720 194, 740 193, 760 192
+    C 780 191.5, 800 191, 820 190.5
+    C 840 190, 855 190, 860 189.5
+  " fill="none" stroke="#155DFC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Key point: σ(0) = 0.5 -->
+    <circle cx="600" cy="340" r="7" fill="#1E2227" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="600" cy="340" r="3" fill="#155DFC"/>
+
+    <!-- Annotation for midpoint -->
+    <rect x="520" y="368" width="80" height="26" rx="4" fill="#155DFC"/>
+    <text x="560" y="385" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">σ(0) = 0.5</text>
+
+    <!-- Asymptote annotations -->
+    <!-- Top asymptote y=1 -->
+    <line x1="680" y1="160" x2="855" y2="160" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+    <text x="862" y="164" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" opacity="0.5">y = 1</text>
+
+    <!-- Bottom asymptote y=0 -->
+    <line x1="365" y1="460" x2="540" y2="460" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+    <text x="365" y="478" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" opacity="0.5">y = 0</text>
+
+    <!-- ================================================ -->
+    <!-- RIGHT OUTPUT PANEL                                -->
+    <!-- ================================================ -->
+    <g transform="translate(960, 260)">
+        <!-- Arrow from graph to output -->
+        <line x1="-80" y1="40" x2="0" y2="40" stroke="#155DFC" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+
+        <!-- Flow label -->
+        <text x="-40" y="30" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#155DFC" text-anchor="middle" letter-spacing="1">OUTPUT</text>
+
+        <!-- Output Box -->
+        <rect x="10" y="0" width="180" height="80" rx="6" fill="#252B36" stroke="#FFFFFF" stroke-width="2"/>
+
+        <!-- Output label -->
+        <text x="100" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6A7A90" text-anchor="middle" letter-spacing="2">NORMALIZED</text>
+
+        <text x="100" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+            σ(z) ∈ [0, 1]
+        </text>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- BOTTOM FORMULA PANEL                              -->
+    <!-- ================================================ -->
+    <rect x="340" y="565" width="520" height="70" rx="8" fill="#252B36" stroke="#155DFC" stroke-width="2"/>
+
+    <!-- Sigmoid formula -->
+    <text x="600" y="580" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6A7A90" text-anchor="middle" letter-spacing="2">SIGMOID ACTIVATION FUNCTION</text>
+
+    <!-- σ(z) = 1 / (1 + e^(-z)) -->
+    <g transform="translate(600, 610)">
+        <text x="0" y="0" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+            <tspan fill="#155DFC">σ</tspan><tspan>(z)</tspan>
+            <tspan dx="8" fill="#155DFC">=</tspan>
+            <tspan dx="8">1</tspan>
+            <tspan dx="6" fill="#6A7A90">/</tspan>
+            <tspan dx="6">(</tspan>
+            <tspan>1</tspan>
+            <tspan dx="4" fill="#155DFC">+</tspan>
+            <tspan dx="4">e</tspan>
+            <tspan font-size="14" dy="-8" fill="#155DFC">−z</tspan>
+            <tspan dy="8">)</tspan>
+        </text>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- TOP-RIGHT: PROPERTY INDICATORS                    -->
+    <!-- ================================================ -->
+    <g transform="translate(960, 120)">
+        <!-- Property 1 -->
+        <rect x="10" y="0" width="180" height="36" rx="4" fill="#252B36" stroke="#2E343C" stroke-width="1"/>
+        <rect x="10" y="0" width="4" height="36" rx="2" fill="#155DFC"/>
+        <text x="28" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Range: (0, 1)</text>
+
+        <!-- Property 2 -->
+        <rect x="10" y="46" width="180" height="36" rx="4" fill="#252B36" stroke="#2E343C" stroke-width="1"/>
+        <rect x="10" y="46" width="4" height="36" rx="2" fill="#155DFC"/>
+        <text x="28" y="68" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Smooth &amp; Continuous</text>
+
+        <!-- Property 3 -->
+        <rect x="10" y="92" width="180" height="36" rx="4" fill="#252B36" stroke="#2E343C" stroke-width="1"/>
+        <rect x="10" y="92" width="4" height="36" rx="2" fill="#155DFC"/>
+        <text x="28" y="114" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Non-linear Transform</text>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- TOP-LEFT: FLOW SUMMARY                            -->
+    <!-- ================================================ -->
+    <g transform="translate(60, 120)">
+        <!-- Mini flow diagram -->
+        <rect x="0" y="10" width="70" height="34" rx="4" fill="#252B36" stroke="#4F5D73" stroke-width="1.5"/>
+        <text x="35" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">z</text>
+
+        <line x1="70" y1="27" x2="100" y2="27" stroke="#155DFC" stroke-width="2" marker-end="url(#arr-blue)"/>
+
+        <rect x="108" y="10" width="70" height="34" rx="4" fill="#155DFC"/>
+        <text x="143" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">σ(z)</text>
+
+        <line x1="178" y1="27" x2="208" y2="27" stroke="#FFFFFF" stroke-width="2" marker-end="url(#arr-white)"/>
+
+        <rect x="216" y="10" width="70" height="34" rx="4" fill="#252B36" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="251" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">[0, 1]</text>
+
+        <text x="0" y="70" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#6A7A90" letter-spacing="1.5">SIGNAL FLOW: INPUT → ACTIVATION → OUTPUT</text>
+    </g>
+
+</svg>

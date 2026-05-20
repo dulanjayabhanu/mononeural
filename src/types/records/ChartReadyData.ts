@@ -1,0 +1,1 @@
+export type ChartReadyData = Record<string, string | number>

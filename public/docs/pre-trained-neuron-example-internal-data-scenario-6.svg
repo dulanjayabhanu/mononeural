@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%" shape-rendering="crispEdges">
+    <defs>
+        <style>
+            text { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+            .title { font-weight: 800; letter-spacing: 1.4px; }
+            .label { font-weight: 600; letter-spacing: 0.5px; }
+            .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+        </style>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-width="0.6" opacity="0.03"/>
+            <rect x="38" y="38" width="4" height="4" fill="#155DFC" opacity="0.12" transform="rotate(45 40 40)"/>
+        </pattern>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+    <rect width="1200" height="675" fill="url(#grid)"/>
+
+    <!-- Subtle neural/data structures -->
+    <g stroke="#155DFC" stroke-width="1.5" fill="none" opacity="0.20" stroke-linecap="square" stroke-linejoin="miter">
+        <!-- top-left cluster -->
+        <line x1="80" y1="110" x2="160" y2="75"/>
+        <line x1="160" y1="75" x2="235" y2="135"/>
+        <line x1="80" y1="110" x2="145" y2="190"/>
+        <line x1="145" y1="190" x2="235" y2="135"/>
+        <line x1="235" y1="135" x2="310" y2="105"/>
+        <rect x="76" y="106" width="8" height="8" fill="#155DFC" transform="rotate(45 80 110)"/>
+        <rect x="156" y="71" width="8" height="8" fill="#155DFC" transform="rotate(45 160 75)"/>
+        <rect x="231" y="131" width="8" height="8" fill="#155DFC" transform="rotate(45 235 135)"/>
+        <rect x="141" y="186" width="8" height="8" fill="#155DFC" transform="rotate(45 145 190)"/>
+        <rect x="306" y="101" width="8" height="8" fill="#155DFC" transform="rotate(45 310 105)"/>
+
+        <!-- bottom-right cluster -->
+        <line x1="940" y1="565" x2="1010" y2="530"/>
+        <line x1="1010" y1="530" x2="1090" y2="585"/>
+        <line x1="1010" y1="530" x2="1065" y2="470"/>
+        <line x1="1065" y1="470" x2="1090" y2="585"/>
+        <rect x="936" y="561" width="8" height="8" fill="#155DFC" transform="rotate(45 940 565)"/>
+        <rect x="1006" y="526" width="8" height="8" fill="#155DFC" transform="rotate(45 1010 530)"/>
+        <rect x="1086" y="581" width="8" height="8" fill="#155DFC" transform="rotate(45 1090 585)"/>
+        <rect x="1061" y="466" width="8" height="8" fill="#155DFC" transform="rotate(45 1065 470)"/>
+    </g>
+
+    <!-- Faint geometric accents -->
+    <g stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.03">
+        <polygon points="1040,130 1090,105 1140,130 1140,190 1090,215 1040,190"/>
+        <polygon points="100,445 145,420 190,445 190,500 145,525 100,500"/>
+    </g>
+
+    <!-- Minimal target icon in background -->
+    <g transform="translate(1010 90)" opacity="0.10" stroke="#155DFC" fill="none" stroke-width="2">
+        <rect x="0" y="0" width="54" height="54"/>
+        <rect x="12" y="12" width="30" height="30"/>
+        <line x1="27" y1="-4" x2="27" y2="58"/>
+        <line x1="-4" y1="27" x2="58" y2="27"/>
+    </g>
+
+    <!-- Desk / workspace -->
+    <polygon points="60,515 620,515 660,545 20,545" fill="#252A32"/>
+    <rect x="20" y="545" width="640" height="12" fill="#15181C"/>
+    <rect x="100" y="557" width="16" height="118" fill="#15181C"/>
+    <rect x="580" y="557" width="16" height="118" fill="#15181C"/>
+
+    <!-- Gym/workspace accessories -->
+    <!-- Water bottle -->
+    <g transform="translate(110 445)">
+        <rect x="0" y="8" width="22" height="58" fill="#334155" stroke="#155DFC" stroke-width="2"/>
+        <rect x="5" y="0" width="12" height="10" fill="#155DFC"/>
+        <rect x="4" y="22" width="14" height="3" fill="#FFFFFF" opacity="0.25"/>
+    </g>
+
+    <!-- Dumbbell on floor -->
+    <g transform="translate(70 595)" fill="#334155" stroke="#155DFC" stroke-width="2">
+        <rect x="0" y="10" width="10" height="28"/>
+        <rect x="16" y="14" width="24" height="20"/>
+        <rect x="46" y="10" width="10" height="28"/>
+        <rect x="62" y="14" width="24" height="20"/>
+    </g>
+
+    <!-- Fitness enthusiast -->
+    <g id="person">
+        <!-- seat -->
+        <rect x="180" y="430" width="125" height="14" fill="#15181C"/>
+        <rect x="236" y="444" width="14" height="90" fill="#15181C"/>
+
+        <!-- legs -->
+        <polygon points="228,515 274,515 300,675 248,675" fill="#0F172A"/>
+        <polygon points="286,515 332,515 362,675 310,675" fill="#1A2433"/>
+
+        <!-- torso -->
+        <polygon points="210,515 246,335 356,335 388,515" fill="#E7ECF3"/>
+        <polygon points="210,515 246,335 278,346 256,515" fill="#155DFC"/>
+        <polygon points="356,335 388,515 346,515 326,346" fill="#CBD5E1"/>
+        <rect x="297" y="360" width="6" height="112" fill="#FFFFFF" opacity="0.55"/>
+
+        <!-- neck -->
+        <rect x="286" y="294" width="24" height="41" fill="#E7ECF3"/>
+
+        <!-- head -->
+        <polygon points="270,240 334,240 348,286 313,318 266,304" fill="#F7F9FC"/>
+        <polygon points="262,242 278,210 328,205 351,240 336,255 282,252" fill="#0F172A"/>
+
+        <!-- left arm -->
+        <polygon points="245,350 196,452 225,496 250,481 218,434 262,360" fill="#D6DCE6"/>
+        <polygon points="208,488 236,488 230,505 204,505" fill="#F7F9FC"/>
+
+        <!-- right arm -->
+        <polygon points="336,350 410,430 463,481 447,497 389,446 318,365" fill="#E7ECF3"/>
+        <polygon points="444,478 472,478 466,494 440,494" fill="#F7F9FC"/>
+
+        <!-- fitness watch -->
+        <rect x="428" y="463" width="12" height="7" fill="#155DFC"/>
+    </g>
+
+    <!-- Laptop -->
+    <g id="laptop">
+        <polygon points="405,485 565,485 585,505 385,505" fill="#475569"/>
+        <polygon points="385,505 585,505 585,510 385,510" fill="#1E293B"/>
+        <polygon points="415,345 555,345 565,485 405,485" fill="#0F172A" stroke="#64748B" stroke-width="3"/>
+        <polygon points="421,353 549,353 557,477 413,477" fill="#101724"/>
+
+        <!-- laptop mini dashboard -->
+        <polygon points="430,365 540,365 542,380 428,380" fill="#155DFC" opacity="0.65"/>
+        <text x="438" y="395" font-size="9" fill="#FFFFFF" class="label">FITNESS GOAL</text>
+        <text x="438" y="414" font-size="14" fill="#FFFFFF" class="title">ON TRACK</text>
+        <rect x="438" y="428" width="84" height="8" fill="#252A32"/>
+        <rect x="438" y="428" width="72" height="8" fill="#155DFC"/>
+        <polyline points="438,458 456,450 474,454 492,438 516,444 534,430" fill="none" stroke="#155DFC" stroke-width="2"/>
+    </g>
+
+    <!-- Projection lines -->
+    <g stroke="#155DFC" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.60">
+        <line x1="555" y1="365" x2="650" y2="160"/>
+        <line x1="560" y1="425" x2="650" y2="280"/>
+        <line x1="565" y1="485" x2="650" y2="405"/>
+    </g>
+    <rect x="646" y="156" width="8" height="8" fill="#155DFC" transform="rotate(45 650 160)"/>
+    <rect x="646" y="276" width="8" height="8" fill="#155DFC" transform="rotate(45 650 280)"/>
+    <rect x="646" y="401" width="8" height="8" fill="#155DFC" transform="rotate(45 650 405)"/>
+
+    <!-- Main digital dashboard -->
+    <g id="dashboard" transform="translate(650,80)">
+        <rect x="0" y="0" width="510" height="330" fill="#15181C" stroke="#155DFC" stroke-width="2"/>
+
+        <!-- header -->
+        <rect x="0" y="0" width="510" height="42" fill="#155DFC" opacity="0.10"/>
+        <line x1="0" y1="42" x2="510" y2="42" stroke="#155DFC" stroke-width="2"/>
+        <text x="24" y="27" fill="#FFFFFF" font-size="14" class="title">FITNESS GOAL PREDICTION</text>
+        <text x="416" y="27" fill="#155DFC" font-size="12" class="mono">ACTIVE</text>
+        <rect x="394" y="17" width="8" height="8" fill="#155DFC" transform="rotate(45 398 21)"/>
+
+        <!-- success badge -->
+        <g transform="translate(390,62)">
+            <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="#155DFC" opacity="0.15" stroke="#155DFC" stroke-width="2"/>
+            <polygon points="40,12 68,26 68,54 40,68 12,54 12,26" fill="#155DFC" opacity="0.28"/>
+            <rect x="25" y="25" width="30" height="30" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <rect x="33" y="33" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <line x1="40" y1="18" x2="40" y2="62" stroke="#FFFFFF" stroke-width="2"/>
+            <line x1="18" y1="40" x2="62" y2="40" stroke="#FFFFFF" stroke-width="2"/>
+        </g>
+
+        <!-- main result -->
+        <text x="30" y="105" fill="#FFFFFF" font-size="36" class="title">GOAL ON TRACK</text>
+        <text x="30" y="130" fill="#94A3B8" font-size="13" class="label">SUCCESS OUTLOOK: HIGH</text>
+
+        <!-- score -->
+        <text x="30" y="174" fill="#FFFFFF" font-size="12" class="title">SUCCESS PROBABILITY</text>
+        <text x="404" y="174" fill="#155DFC" font-size="18" class="mono title">91.6%</text>
+        <rect x="30" y="189" width="450" height="14" fill="#252A32"/>
+        <rect x="30" y="189" width="412" height="14" fill="#155DFC"/>
+        <line x1="143" y1="189" x2="143" y2="203" stroke="#15181C" stroke-width="2"/>
+        <line x1="256" y1="189" x2="256" y2="203" stroke="#15181C" stroke-width="2"/>
+        <line x1="369" y1="189" x2="369" y2="203" stroke="#15181C" stroke-width="2"/>
+
+        <!-- analytics rows -->
+        <text x="30" y="234" fill="#64748B" font-size="10" class="mono">HEALTH SIGNALS + TRAINING ANALYSIS</text>
+
+        <g transform="translate(30,245)">
+            <text x="0" y="12" fill="#FFFFFF" font-size="10" class="label">Consistency</text>
+            <rect x="140" y="3" width="185" height="8" fill="#252A32"/>
+            <rect x="140" y="3" width="178" height="8" fill="#155DFC"/>
+            <text x="338" y="12" fill="#155DFC" font-size="10" class="mono">96%</text>
+
+            <text x="0" y="34" fill="#FFFFFF" font-size="10" class="label">Recovery</text>
+            <rect x="140" y="25" width="185" height="8" fill="#252A32"/>
+            <rect x="140" y="25" width="163" height="8" fill="#155DFC"/>
+            <text x="338" y="34" fill="#155DFC" font-size="10" class="mono">88%</text>
+
+            <text x="0" y="56" fill="#FFFFFF" font-size="10" class="label">Load Balance</text>
+            <rect x="140" y="47" width="185" height="8" fill="#252A32"/>
+            <rect x="140" y="47" width="170" height="8" fill="#155DFC"/>
+            <text x="338" y="56" fill="#155DFC" font-size="10" class="mono">92%</text>
+        </g>
+
+        <!-- mini performance chart -->
+        <g transform="translate(390,235)">
+            <text x="0" y="10" fill="#64748B" font-size="10" class="mono">TRAJECTORY</text>
+            <polyline points="0,55 0,20 18,28 36,18 54,24 72,10 90,16" fill="none" stroke="#155DFC" stroke-width="3" stroke-linejoin="miter"/>
+            <rect x="-2" y="53" width="4" height="4" fill="#155DFC" transform="rotate(45 0 55)"/>
+            <rect x="16" y="26" width="4" height="4" fill="#155DFC" transform="rotate(45 18 28)"/>
+            <rect x="34" y="16" width="4" height="4" fill="#155DFC" transform="rotate(45 36 18)"/>
+            <rect x="52" y="22" width="4" height="4" fill="#155DFC" transform="rotate(45 54 24)"/>
+            <rect x="70" y="8" width="4" height="4" fill="#FFFFFF" transform="rotate(45 72 10)"/>
+            <rect x="88" y="14" width="4" height="4" fill="#155DFC" transform="rotate(45 90 16)"/>
+        </g>
+    </g>
+
+    <!-- Symbol cards -->
+    <g id="cards" transform="translate(650,430)">
+        <!-- Card 1: progress chart -->
+        <g transform="translate(0,0)">
+            <rect x="0" y="0" width="118" height="140" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="118" height="4" fill="#155DFC"/>
+            <g transform="translate(22,25)">
+                <polyline points="0,50 0,0" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <polyline points="0,50 50,50" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <polyline points="6,40 18,28 30,32 42,16 52,8" fill="none" stroke="#155DFC" stroke-width="3"/>
+                <rect x="4" y="38" width="4" height="4" fill="#155DFC" transform="rotate(45 6 40)"/>
+                <rect x="16" y="26" width="4" height="4" fill="#155DFC" transform="rotate(45 18 28)"/>
+                <rect x="28" y="30" width="4" height="4" fill="#155DFC" transform="rotate(45 30 32)"/>
+                <rect x="40" y="14" width="4" height="4" fill="#FFFFFF" transform="rotate(45 42 16)"/>
+                <rect x="50" y="6" width="4" height="4" fill="#155DFC" transform="rotate(45 52 8)"/>
+            </g>
+            <text x="18" y="110" fill="#FFFFFF" font-size="11" class="label">PROGRESS</text>
+            <text x="18" y="126" fill="#155DFC" font-size="10" class="mono">UPWARD TREND</text>
+        </g>
+
+        <!-- Card 2: workout icon -->
+        <g transform="translate(130,0)">
+            <rect x="0" y="0" width="118" height="140" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="118" height="4" fill="#155DFC"/>
+            <g transform="translate(22,34)" fill="#334155" stroke="#FFFFFF" stroke-width="2">
+                <rect x="0" y="16" width="8" height="24"/>
+                <rect x="12" y="20" width="20" height="16"/>
+                <rect x="36" y="20" width="20" height="16"/>
+                <rect x="60" y="16" width="8" height="24"/>
+            </g>
+            <g transform="translate(22,34)" fill="#155DFC">
+                <rect x="12" y="20" width="20" height="16" opacity="0.35"/>
+                <rect x="36" y="20" width="20" height="16" opacity="0.35"/>
+            </g>
+            <text x="18" y="110" fill="#FFFFFF" font-size="11" class="label">WORKOUT</text>
+            <text x="18" y="126" fill="#155DFC" font-size="10" class="mono">LOAD OPTIMAL</text>
+        </g>
+
+        <!-- Card 3: target goal -->
+        <g transform="translate(260,0)">
+            <rect x="0" y="0" width="118" height="140" fill="#15181C" stroke="#334155" stroke-width="1.5"/>
+            <rect x="0" y="0" width="118" height="4" fill="#155DFC"/>
+            <g transform="translate(27,28)" stroke="#155DFC" stroke-width="3" fill="none">
+                <rect x="8" y="8" width="38" height="38"/>
+                <rect x="18" y="18" width="18" height="18"/>
+                <line x1="27" y1="0" x2="27" y2="54"/>
+                <line x1="0" y1="27" x2="54" y2="27"/>
+            </g>
+            <text x="18" y="110" fill="#FFFFFF" font-size="11" class="label">TARGET</text>
+            <text x="18" y="126" fill="#155DFC" font-size="10" class="mono">GOAL ALIGNED</text>
+        </g>
+
+        <!-- Card 4: achievement badge -->
+        <g transform="translate(390,0)">
+            <rect x="0" y="0" width="118" height="140" fill="#15181C" stroke="#155DFC" stroke-width="1.5"/>
+            <rect x="0" y="0" width="118" height="4" fill="#155DFC"/>
+            <g transform="translate(29,22)">
+                <polygon points="25,0 50,15 45,45 25,58 5,45 0,15" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                <polygon points="25,10 40,19 37,39 25,47 13,39 10,19" fill="#155DFC" opacity="0.35"/>
+                <polygon points="25,16 29,24 38,24 31,29 34,38 25,33 16,38 19,29 12,24 21,24" fill="#155DFC"/>
+                <polygon points="15,44 10,68 24,58 38,68 35,44" fill="#155DFC" opacity="0.45"/>
+            </g>
+            <text x="18" y="110" fill="#FFFFFF" font-size="11" class="label">ACHIEVEMENT</text>
+            <text x="18" y="126" fill="#155DFC" font-size="10" class="mono">BADGE READY</text>
+        </g>
+    </g>
+
+    <!-- Foreground accents -->
+    <g stroke="#155DFC" stroke-width="1.5" opacity="0.60">
+        <line x1="40" y1="40" x2="60" y2="40"/>
+        <line x1="50" y1="30" x2="50" y2="50"/>
+        <line x1="1140" y1="635" x2="1160" y2="635"/>
+        <line x1="1150" y1="625" x2="1150" y2="645"/>
+    </g>
+
+    <!-- Corner frame -->
+    <g stroke="#FFFFFF" stroke-width="2" opacity="0.10" fill="none">
+        <polyline points="20,60 20,20 60,20"/>
+        <polyline points="1180,60 1180,20 1140,20"/>
+        <polyline points="20,615 20,655 60,655"/>
+        <polyline points="1180,615 1180,655 1140,655"/>
+    </g>
+
+    <!-- Subtle structure lines -->
+    <g stroke="#FFFFFF" stroke-width="1" opacity="0.04">
+        <line x1="0" y1="200" x2="1200" y2="200"/>
+        <line x1="0" y1="400" x2="1200" y2="400"/>
+        <line x1="640" y1="0" x2="640" y2="675"/>
+    </g>
+</svg>

@@ -1,0 +1,198 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Drop shadow for cards -->
+        <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+        </filter>
+
+        <!-- Gradients for accents -->
+        <linearGradient id="accent-grad-1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#155DFC"/>
+            <stop offset="100%" stop-color="#155DFC" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="accent-grad-2" x1="1" y1="0" x2="0" y2="0">
+            <stop offset="0%" stop-color="#155DFC"/>
+            <stop offset="100%" stop-color="#155DFC" stop-opacity="0"/>
+        </linearGradient>
+
+        <!-- Clip paths to strictly contain elements within the 20px rounded corners -->
+        <clipPath id="clip-c11"><rect x="50" y="30" width="530" height="180" rx="20"/></clipPath>
+        <clipPath id="clip-c12"><rect x="620" y="30" width="530" height="180" rx="20"/></clipPath>
+        <clipPath id="clip-c21"><rect x="50" y="245" width="530" height="180" rx="20"/></clipPath>
+        <clipPath id="clip-c22"><rect x="620" y="245" width="530" height="180" rx="20"/></clipPath>
+        <clipPath id="clip-c3"><rect x="50" y="460" width="1100" height="165" rx="20"/></clipPath>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1E2227"/>
+
+    <!-- Subtle background grid -->
+    <g stroke="#252B36" stroke-width="1" opacity="0.5">
+        <line x1="0" y1="120" x2="1200" y2="120"/>
+        <line x1="0" y1="335" x2="1200" y2="335"/>
+        <line x1="0" y1="542" x2="1200" y2="542"/>
+        <line x1="600" y1="0" x2="600" y2="675"/>
+    </g>
+
+    <!-- Corner framing marks -->
+    <g stroke="#3A4150" stroke-width="2" fill="none" opacity="0.6">
+        <path d="M 30 50 L 30 30 L 50 30"/>
+        <path d="M 1170 30 L 1170 50 L 1150 50" transform="translate(0, -20)"/>
+        <path d="M 30 625 L 30 645 L 50 645"/>
+        <path d="M 1170 645 L 1170 625 L 1150 625"/>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- ROW 1, CARD 1 (Top Left)                         -->
+    <!-- ================================================ -->
+    <g filter="url(#card-shadow)">
+        <!-- Base -->
+        <rect x="50" y="30" width="530" height="180" rx="20" fill="#252B36"/>
+
+        <!-- Clipped Content -->
+        <g clip-path="url(#clip-c11)">
+            <!-- Edge Accents -->
+            <rect x="50" y="30" width="6" height="180" fill="#155DFC"/>
+            <path d="M 50 30 L 580 30 L 580 80 L 50 100 Z" fill="#155DFC" opacity="0.04"/>
+
+            <!-- Content Placeholders -->
+            <rect x="86" y="60" width="140" height="12" rx="6" fill="#3A4150"/>
+            <rect x="86" y="88" width="280" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="86" y="106" width="220" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+
+            <line x1="86" y1="134" x2="540" y2="134" stroke="#2E343C" stroke-width="2"/>
+
+            <rect x="86" y="154" width="100" height="24" rx="12" fill="#155DFC" opacity="0.15"/>
+            <rect x="106" y="162" width="60" height="8" rx="4" fill="#155DFC"/>
+
+            <rect x="206" y="162" width="80" height="8" rx="4" fill="#4F5D73" opacity="0.5"/>
+        </g>
+
+        <!-- Border Overlay -->
+        <rect x="50" y="30" width="530" height="180" rx="20" fill="none" stroke="#2E343C" stroke-width="2"/>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- ROW 1, CARD 2 (Top Right)                        -->
+    <!-- ================================================ -->
+    <g filter="url(#card-shadow)">
+        <rect x="620" y="30" width="530" height="180" rx="20" fill="#252B36"/>
+
+        <g clip-path="url(#clip-c12)">
+            <!-- Edge Accents -->
+            <rect x="620" y="30" width="530" height="4" fill="url(#accent-grad-1)"/>
+            <circle cx="1100" cy="70" r="40" fill="#155DFC" opacity="0.03"/>
+            <circle cx="1130" cy="40" r="60" fill="#155DFC" opacity="0.03"/>
+
+            <!-- Content Placeholders -->
+            <rect x="656" y="60" width="180" height="12" rx="6" fill="#3A4150"/>
+            <rect x="656" y="88" width="320" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="656" y="106" width="260" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="656" y="124" width="290" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+
+            <rect x="656" y="154" width="40" height="24" rx="6" fill="#2E343C"/>
+            <rect x="706" y="154" width="40" height="24" rx="6" fill="#2E343C"/>
+            <rect x="756" y="154" width="40" height="24" rx="6" fill="#2E343C"/>
+        </g>
+
+        <rect x="620" y="30" width="530" height="180" rx="20" fill="none" stroke="#2E343C" stroke-width="2"/>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- ROW 2, CARD 1 (Middle Left)                      -->
+    <!-- ================================================ -->
+    <g filter="url(#card-shadow)">
+        <rect x="50" y="245" width="530" height="180" rx="20" fill="#252B36"/>
+
+        <g clip-path="url(#clip-c21)">
+            <!-- Edge Accents -->
+            <rect x="574" y="245" width="6" height="180" fill="#155DFC" opacity="0.8"/>
+
+            <!-- Content Placeholders -->
+            <rect x="86" y="275" width="120" height="12" rx="6" fill="#3A4150"/>
+
+            <!-- Data bars -->
+            <rect x="86" y="310" width="380" height="6" rx="3" fill="#2E343C"/>
+            <rect x="86" y="310" width="240" height="6" rx="3" fill="#155DFC"/>
+
+            <rect x="86" y="334" width="380" height="6" rx="3" fill="#2E343C"/>
+            <rect x="86" y="334" width="160" height="6" rx="3" fill="#155DFC" opacity="0.6"/>
+
+            <rect x="86" y="358" width="380" height="6" rx="3" fill="#2E343C"/>
+            <rect x="86" y="358" width="310" height="6" rx="3" fill="#155DFC" opacity="0.8"/>
+
+            <rect x="86" y="388" width="90" height="8" rx="4" fill="#4F5D73" opacity="0.5"/>
+        </g>
+
+        <rect x="50" y="245" width="530" height="180" rx="20" fill="none" stroke="#2E343C" stroke-width="2"/>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- ROW 2, CARD 2 (Middle Right)                     -->
+    <!-- ================================================ -->
+    <g filter="url(#card-shadow)">
+        <rect x="620" y="245" width="530" height="180" rx="20" fill="#252B36"/>
+
+        <g clip-path="url(#clip-c22)">
+            <!-- Edge Accents -->
+            <rect x="620" y="421" width="530" height="4" fill="url(#accent-grad-2)"/>
+            <rect x="620" y="245" width="4" height="60" fill="#155DFC"/>
+
+            <!-- Content Placeholders -->
+            <rect x="656" y="275" width="160" height="12" rx="6" fill="#3A4150"/>
+            <rect x="656" y="305" width="240" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+
+            <!-- Grid layout hint -->
+            <rect x="656" y="335" width="140" height="60" rx="8" fill="#2E343C"/>
+            <rect x="810" y="335" width="140" height="60" rx="8" fill="#2E343C"/>
+            <rect x="964" y="335" width="140" height="60" rx="8" fill="#2E343C"/>
+
+            <!-- Inner grid accents -->
+            <rect x="672" y="351" width="60" height="6" rx="3" fill="#4F5D73" opacity="0.5"/>
+            <rect x="826" y="351" width="80" height="6" rx="3" fill="#4F5D73" opacity="0.5"/>
+            <rect x="980" y="351" width="50" height="6" rx="3" fill="#4F5D73" opacity="0.5"/>
+        </g>
+
+        <rect x="620" y="245" width="530" height="180" rx="20" fill="none" stroke="#2E343C" stroke-width="2"/>
+    </g>
+
+    <!-- ================================================ -->
+    <!-- ROW 3, CARD 1 (Full Width Bottom)                -->
+    <!-- ================================================ -->
+    <g filter="url(#card-shadow)">
+        <rect x="50" y="460" width="1100" height="165" rx="20" fill="#252B36"/>
+
+        <g clip-path="url(#clip-c3)">
+            <!-- Edge Accents -->
+            <rect x="50" y="460" width="200" height="4" fill="#155DFC"/>
+            <rect x="950" y="460" width="200" height="4" fill="#155DFC" opacity="0.4"/>
+            <rect x="220" y="460" width="2" height="165" fill="#155DFC" opacity="0.15"/>
+
+            <!-- Column 1 Content -->
+            <rect x="86" y="495" width="100" height="12" rx="6" fill="#3A4150"/>
+            <rect x="86" y="525" width="120" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="86" y="545" width="90" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="86" y="575" width="100" height="24" rx="12" fill="#155DFC" opacity="0.15"/>
+            <rect x="106" y="583" width="60" height="8" rx="4" fill="#155DFC"/>
+
+            <!-- Column 2 Content -->
+            <rect x="256" y="495" width="140" height="12" rx="6" fill="#3A4150"/>
+            <rect x="256" y="525" width="280" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="256" y="545" width="240" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="256" y="565" width="260" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+
+            <!-- Column 3 Content -->
+            <rect x="620" y="495" width="120" height="12" rx="6" fill="#3A4150"/>
+            <rect x="620" y="525" width="200" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+            <rect x="620" y="545" width="180" height="8" rx="4" fill="#4F5D73" opacity="0.6"/>
+
+            <!-- Column 4 Content (Right aligned block) -->
+            <rect x="940" y="495" width="170" height="70" rx="8" fill="#2E343C"/>
+            <rect x="960" y="515" width="80" height="8" rx="4" fill="#4F5D73" opacity="0.8"/>
+            <rect x="960" y="535" width="120" height="8" rx="4" fill="#4F5D73" opacity="0.5"/>
+        </g>
+
+        <rect x="50" y="460" width="1100" height="165" rx="20" fill="none" stroke="#2E343C" stroke-width="2"/>
+    </g>
+
+</svg>
