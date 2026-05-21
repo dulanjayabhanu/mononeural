@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import {ThemeProvider} from "@/components/theme-provider.tsx";
 import {createBrowserRouter, RouterProvider} from "react-router";
+import { Analytics } from "@vercel/analytics/react"
 
 export const RootLayout = lazy(() => import("@/layouts/RootLayout"))
 export const HomePage = lazy(() => import("@/pages/HomePage"))
@@ -65,6 +66,7 @@ createRoot(document.getElementById('root')!).render(
           }>
               <RouterProvider router={router} />
           </Suspense>
+          <Analytics />
       </ThemeProvider>
   </StrictMode>,
 )
