@@ -19,7 +19,7 @@ const DocumentationSideBar = (
     const documentationContent: DocumentPageContent[] = getDocumentationContent()
 
     return (
-        <Sidebar className="mt-14 pb-20">
+        <Sidebar className="mt-14 pb-20 ps-4">
             <SidebarHeader className="pt-10">
                 <SidebarMenu>
                     <SidebarMenuItem>
@@ -84,14 +84,14 @@ const DocumentationSideBar = (
             <SidebarFooter className="pt-6 select-none">
                 <SidebarMenu>
                     <SidebarMenuItem>
-                        <SidebarMenuButton className="text-xs text-muted-foreground">
-                            Press
+                        <SidebarMenuButton className="flex flex-row text-xs text-muted-foreground overflow-x-hidden truncate">
                             <KbdGroup>
+                                <Kbd>⌘</Kbd>/
                                 <Kbd>Ctrl</Kbd>
                                 <span>+</span>
                                 <Kbd>B</Kbd>
                             </KbdGroup>
-                            to toggle sidebar
+                            to toggle
                         </SidebarMenuButton>
                     </SidebarMenuItem>
                 </SidebarMenu>

@@ -311,7 +311,7 @@ const TrainingCriteriaCard = (
                                                 <Scrubber
                                                     key={index}
                                                     decimals={2}
-                                                    label={`Input ${index + 1} (0-1)`}
+                                                    label={`Input ${index + 3} (0-1)`}
                                                     max={1}
                                                     min={0}
                                                     onValueChange={(v) =>
