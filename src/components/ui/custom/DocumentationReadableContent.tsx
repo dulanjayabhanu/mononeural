@@ -76,7 +76,7 @@ const DocumentationReadableContent = (
     }
 
     return (
-        <div className="w-full max-w-3xl flex flex-col gap-4 px-4 lg:px-14 pt-10 pb-6 z-10 relative">
+        <div className="w-full max-w-4xl flex flex-col gap-4 px-4 lg:px-14 pt-10 pb-6 z-10 relative">
             <div className="fixed top-15 left-2 flex flex-row z-50 justify-end gap-4 py-6 md:py-0 ps-2 md:pe-0 md:hidden">
                 <MobileNavigationMenuForDocumentation
                     documentationReadableContentHookProps={documentationReadableContentHookProps}

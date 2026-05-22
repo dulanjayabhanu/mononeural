@@ -116,9 +116,9 @@ const AnimatedToggle = ({
       aria-checked={checked}
       aria-label={label}
       className={cn(
-        "relative inline-flex shrink-0 cursor-pointer items-center rounded-full p-0.5 transition-colors",
+        "relative inline-flex shrink-0 cursor-pointer items-center rounded-full p-0.5 transition-colors border",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-        checked ? "bg-brand" : "bg-muted-foreground/30",
+        checked ? "bg-muted-foreground/10" : "bg-muted-foreground/20",
         disabled && "cursor-not-allowed opacity-50",
         sizeConfig.track,
         className
