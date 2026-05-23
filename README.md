@@ -44,6 +44,10 @@ This creates a situation where learners can memorize concepts but struggle to de
 
 ## The MonoNeural Approach
 
+<div align="center">
+  <img src="/docs/assets/images/mononeural-showcase-mockup.webp" alt="MonoNeural Showcase Mockup Poster" />
+</div>
+
 MonoNeural addresses these challenges by combining theoretical learning with interactive visualization inside a single unified platform.
 
 Instead of treating neural networks as static mathematical formulas, MonoNeural represents them as live, configurable systems that respond immediately to user input.
@@ -302,6 +306,22 @@ Tailwind CSS is used for styling, enabling a consistent and utility-first design
 Special appreciation goes to the broader open-source community for continuously improving tools, libraries, and documentation that support modern web development.
 
 MonoNeural is also inspired by educational efforts in the field of machine learning and artificial intelligence, with the goal of making complex concepts more accessible and understandable through interactive learning experiences.
+
+<br>
+
+## Screenshots
+
+Take a quick look at some of the key experiences available in MonoNeural, including interactive neuron testing, structured documentation, and pre-trained learning examples.
+
+<div align="center">
+  <img src="/docs/assets/images/mononeural-artificial-neuron-tester-mockup.webp" alt="MonoNeural artificial neuron tester interface" />
+</div>
+<div align="center">
+  <img src="/docs/assets/images/mononeural-documentation-mockup.webp" alt="MonoNeural documentation interface" />
+</div>
+<div align="center">
+  <img src="/docs/assets/images/mononeural-pre-trained-neuron-examples-mockup.webp" alt="MonoNeural pre-trained neuron examples interface" />
+</div>
 
 <br>
 
